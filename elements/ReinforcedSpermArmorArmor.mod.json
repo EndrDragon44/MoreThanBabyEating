@@ -1,0 +1,58 @@
+{
+  "_fv": 18,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "reinfosprmhelm",
+    "enableBody": true,
+    "textureBody": "reinsprmchest",
+    "enableLeggings": true,
+    "textureLeggings": "reinforsrmlegs",
+    "enableBoots": true,
+    "textureBoots": "rinsrmboot",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "reinforcedspermarmor",
+    "helmetName": "Reinforced Sperm Helmet",
+    "bodyName": "Reinforced Sperm Chestplate",
+    "leggingsName": "Reinforced Sperm Leggings",
+    "bootsName": "Reinforced Sperm Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 90,
+    "damageValueHelmet": 12,
+    "damageValueBody": 30,
+    "damageValueLeggings": 36,
+    "damageValueBoots": 12,
+    "enchantability": 54,
+    "toughness": 5.0,
+    "knockbackResistance": 2.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "Blocks.GRAY_GLAZED_TERRACOTTA"
+      }
+    ]
+  }
+}

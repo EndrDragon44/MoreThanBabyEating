@@ -1,0 +1,16 @@
+{
+  "group": "babyeating",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "babyeating:hardened_sperm"
+    },
+    {
+      "item": "minecraft:clay_ball"
+    }
+  ],
+  "result": {
+    "item": "babyeating:stronger_clay",
+    "count": 1
+  }
+}

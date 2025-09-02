@@ -1,0 +1,28 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "cookedbaby",
+    "customModelName": "Normal",
+    "name": "Cooked Baby",
+    "rarity": "UNCOMMON",
+    "specialInfo": [
+      "The baby has gone through hell and back for the perfect char."
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 4,
+    "nutritionalValue": 20,
+    "saturation": 5.0,
+    "eatingSpeed": 80,
+    "resultItem": {
+      "value": "Items.BONE"
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

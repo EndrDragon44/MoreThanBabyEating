@@ -1,0 +1,28 @@
+{
+  "_fv": 18,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "babyitem",
+    "customModelName": "Normal",
+    "name": "Raw Baby",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "This baby is uncooked. While you can eat it, it is raw and hard to chew. Cooking it may be the best idea, otherwise you may get food poisoning..."
+    ],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 4,
+    "nutritionalValue": 5,
+    "saturation": 1.0,
+    "eatingSpeed": 120,
+    "resultItem": {
+      "value": "Items.BONE"
+    },
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}

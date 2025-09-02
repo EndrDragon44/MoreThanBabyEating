@@ -1,0 +1,19 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "pbabydisc",
+    "name": "Music Disc",
+    "description": "Baby - Mom took my iPad away",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:babysong"
+    },
+    "specialInfo": [
+      "Includes \"Memory Reboot\" by VØJ and Narvent"
+    ],
+    "hasGlow": false
+  }
+}

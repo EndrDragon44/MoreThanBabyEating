@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      },
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      },
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      },
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      },
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      },
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      },
+      {
+        "value": "CUSTOM:ReinforcedSpermBar"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ReinforcedSpermArmorArmor.body"
+    },
+    "name": "reinforced_sperm_armor_armor_body_recipe",
+    "namespace": "mod"
+  }
+}

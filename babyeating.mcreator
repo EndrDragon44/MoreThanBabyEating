@@ -1,0 +1,600 @@
+{
+  "id_map": {
+    "ENTITY": 6
+  },
+  "mod_elements": [
+    {
+      "name": "Baby",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1,
+        "1": 2
+      },
+      "registry_name": "baby"
+    },
+    {
+      "name": "CookedBaby",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_baby"
+    },
+    {
+      "name": "UncookedBaby",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "uncooked_baby"
+    },
+    {
+      "name": "Killthebab",
+      "type": "achievement",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "killthebab"
+    },
+    {
+      "name": "Babydisc",
+      "type": "musicdisc",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "babydisc"
+    },
+    {
+      "name": "PregnantMom",
+      "type": "mob",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3,
+        "1": 4
+      },
+      "registry_name": "pregnant_mom"
+    },
+    {
+      "name": "Momsbelt",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "momsbelt"
+    },
+    {
+      "name": "Beltrecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beltrecipe"
+    },
+    {
+      "name": "Cookbaby",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cookbaby"
+    },
+    {
+      "name": "Cookbaby2",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cookbaby_2"
+    },
+    {
+      "name": "Placenta",
+      "type": "fluid",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "placenta"
+    },
+    {
+      "name": "BabyformulaPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "babyformula_potion_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Babyformula",
+      "type": "potion",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "babyformula"
+    },
+    {
+      "name": "Mommysmilkpotionstatedapplied",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mommysmilkpotionstatedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BabyEntityDies",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "baby_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Pedophilr",
+      "type": "mob",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 5,
+        "1": 6
+      },
+      "registry_name": "pedophilr"
+    },
+    {
+      "name": "Milkstore",
+      "type": "structure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "milkstore"
+    },
+    {
+      "name": "SpermdrillBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermdrill_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpermdrillRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermdrill_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spermdrill",
+      "type": "tool",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermdrill"
+    },
+    {
+      "name": "Sperm",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sperm"
+    },
+    {
+      "name": "SuperGlue",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "super_glue"
+    },
+    {
+      "name": "HardenedSperm",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardened_sperm"
+    },
+    {
+      "name": "StrongerClay",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stronger_clay"
+    },
+    {
+      "name": "Hardclay",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardclay"
+    },
+    {
+      "name": "Hardendsperm",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hardendsperm"
+    },
+    {
+      "name": "SpermBar",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sperm_bar"
+    },
+    {
+      "name": "ReinforcedSpermBar",
+      "type": "item",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_sperm_bar"
+    },
+    {
+      "name": "Spermbariis",
+      "type": "recipe",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermbariis"
+    },
+    {
+      "name": "Spermbariess",
+      "type": "recipe",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermbariess"
+    },
+    {
+      "name": "Spermdiamondbar",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermdiamondbar"
+    },
+    {
+      "name": "Spermdabar",
+      "type": "recipe",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermdabar"
+    },
+    {
+      "name": "ReinforcedSpermArmorArmor",
+      "type": "armor",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_sperm_armor_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "ReinforcedSpermArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_sperm_armor_armor_helmet_recipe"
+    },
+    {
+      "name": "ReinforcedSpermArmorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_sperm_armor_armor_body_recipe"
+    },
+    {
+      "name": "ReinforcedSpermArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_sperm_armor_armor_leggings_recipe"
+    },
+    {
+      "name": "ReinforcedSpermArmorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reinforced_sperm_armor_armor_boots_recipe"
+    },
+    {
+      "name": "Spermore",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermore"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "babydeath",
+      "files": [
+        "baby_fuckinbg_dies"
+      ],
+      "category": "neutral",
+      "subtitle": "Baby dies"
+    },
+    {
+      "name": "babycry",
+      "files": [
+        "baby-cry-101477",
+        "babywwwwaaahhh",
+        "babywah"
+      ],
+      "category": "neutral",
+      "subtitle": "Baby wails"
+    },
+    {
+      "name": "happybabysounds",
+      "files": [
+        "hahaha",
+        "hehehahaha",
+        "yapityyap",
+        "yapppppp",
+        "yapyapyap"
+      ],
+      "category": "neutral",
+      "subtitle": "Baby yaps"
+    },
+    {
+      "name": "babysong",
+      "files": [
+        "babysong"
+      ],
+      "category": "music",
+      "subtitle": "Baby DJs"
+    },
+    {
+      "name": "momhurt",
+      "files": [
+        "female-scream-short-251067",
+        "woman-scream-86832",
+        "woman-yelling-high-pitched-2-86821",
+        "young-girl-scream-105037"
+      ],
+      "category": "neutral",
+      "subtitle": "Woman is assaulted"
+    },
+    {
+      "name": "momdies",
+      "files": [
+        "female-scream-1-86768",
+        "girl-scream-45657",
+        "young-girl-scream-105037"
+      ],
+      "category": "neutral",
+      "subtitle": "Woman fucking dies"
+    },
+    {
+      "name": "momlives",
+      "files": [
+        "swedish-woman-98332",
+        "woman-clearing-throat-fx-39169",
+        "woman-laugh-6421",
+        "woman-scream-86832",
+        "woman-sigh-101931",
+        "woman-sneeze-104997"
+      ],
+      "category": "neutral",
+      "subtitle": "Woman yaps"
+    },
+    {
+      "name": "pedodeaths",
+      "files": [
+        "pedodeath1",
+        "pedodeath2",
+        "pedodeath3"
+      ],
+      "category": "neutral",
+      "subtitle": "Man was annihilated"
+    },
+    {
+      "name": "pedohurts",
+      "files": [
+        "pedohurt1",
+        "pedohurt2",
+        "pedohurt3",
+        "pedohurt4"
+      ],
+      "category": "neutral",
+      "subtitle": "Man gets slapped"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "tipped_arrow.effect.babyformula": "Arrow of Baby Formula",
+      "subtitles.pedohurts": "Man gets slapped",
+      "splash_potion.effect.babyformula": "Splash Baby Formula",
+      "entity.pregnant_mom.name": "Pregnant Woman",
+      "item.sperm.name": "Raw Sperm",
+      "item.reinforced_sperm_bar.name": "Reinforced Sperm Bar",
+      "subtitles.pedolaughs": "Man chuckles",
+      "item.momsbelt.name": "Belt",
+      "item.reinforced_sperm_armor_armorlegs.name": "Reinforced Sperm Leggings",
+      "subtitles.happybabysounds": "Baby yaps",
+      "item.reinforced_sperm_armor_armorbody.name": "Reinforced Sperm Chestplate",
+      "subtitles.momdies": "Woman fucking dies",
+      "item.sperm_bar.name": "Sperm Bar",
+      "item.babydisc.name": "Music Disc",
+      "potion.effect.babyformula": "Baby Formula",
+      "subtitles.death": "Baby dies",
+      "subtitles.babysong": "Baby DJs",
+      "item.record.babydisc.desc": "Baby - Mom took my iPad away",
+      "subtitles.momlives": "Woman yaps",
+      "entity.baby.name": "Baby",
+      "subtitles.babycry": "Baby wails",
+      "item.uncooked_baby.name": "Raw Baby",
+      "subtitles.laughguy": "Man laughs",
+      "subtitles.pedodeaths": "Man was annihilated",
+      "tile.spermore.name": "Sperm Ore",
+      "item.spermdrill.name": "Sperm Drill",
+      "effect.babyformula": "Baby Formula",
+      "item.hardened_sperm.name": "Hardened Sperm",
+      "lingering_potion.effect.babyformula": "Lingering Baby Formula",
+      "item.reinforced_sperm_armor_armorboots.name": "Reinforced Sperm Boots",
+      "subtitles.pedolaughing": "Man chuckles",
+      "fluid.placenta": "Placenta",
+      "advancements.killthebab.descr": "Defeat a baby. Midnight snack that is hard to find in the dark.",
+      "entity.pedophilr.name": "Pedophile",
+      "item.cooked_baby.name": "Cooked Baby",
+      "item.super_glue.name": "Super Glue",
+      "item.reinforced_sperm_armor_armorhelmet.name": "Reinforced Sperm Helmet",
+      "subtitles.momhurt": "Woman is assaulted",
+      "advancements.killthebab.title": "Player, don\u0027t hurt me... Don\u0027t hurt me... No more...",
+      "subtitles.babydeath": "Baby dies",
+      "item.stronger_clay.name": "Stronger Clay"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "babyeating",
+    "modName": "Babies for Lunch",
+    "version": "1.0.0",
+    "description": "A beautiful description of what should be legal in all 50 U.S. States. Unfortunately, Federal Laws are in place for a reason. Yet we are allowed (to some extend) to feed our desires via video games. Here we are! Have fun!",
+    "author": "Emmet",
+    "license": "Academic Free License v3.00",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "thumbnail",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.12.2",
+    "modElementsPackage": "gordanramsey.loves.babyeating",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

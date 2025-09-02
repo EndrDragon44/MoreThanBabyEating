@@ -1,0 +1,39 @@
+{
+  "group": "babyeating",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "babyeating:reinforced_sperm_bar"
+    },
+    "2": {
+      "item": "babyeating:reinforced_sperm_bar"
+    },
+    "3": {
+      "item": "babyeating:reinforced_sperm_bar"
+    },
+    "4": {
+      "item": "babyeating:reinforced_sperm_bar"
+    },
+    "5": {
+      "item": "babyeating:reinforced_sperm_bar"
+    },
+    "6": {
+      "item": "babyeating:reinforced_sperm_bar"
+    },
+    "7": {
+      "item": "babyeating:reinforced_sperm_bar"
+    },
+    "8": {
+      "item": "babyeating:reinforced_sperm_bar"
+    }
+  },
+  "result": {
+    "item": "babyeating:reinforced_sperm_armor_armorbody",
+    "count": 1
+  }
+}

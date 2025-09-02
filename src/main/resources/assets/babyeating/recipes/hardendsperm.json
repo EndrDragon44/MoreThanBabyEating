@@ -1,0 +1,37 @@
+{
+  "group": "babyeating",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:super_glue"
+    },
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:sperm"
+    }
+  ],
+  "result": {
+    "item": "babyeating:hardened_sperm",
+    "count": 8
+  }
+}

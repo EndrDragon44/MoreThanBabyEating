@@ -1,0 +1,28 @@
+{
+  "group": "babyeating",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "babyeating:sperm_bar"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "babyeating:sperm_bar"
+    }
+  ],
+  "result": {
+    "item": "babyeating:reinforced_sperm_bar",
+    "count": 2
+  }
+}

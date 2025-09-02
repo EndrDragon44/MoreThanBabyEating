@@ -1,0 +1,176 @@
+{
+  "babydeath": {
+    "category": "neutral",
+    "subtitle": "subtitles.babydeath",
+    "sounds": [
+      {
+        "name": "babyeating:baby_fuckinbg_dies",
+        "stream": false
+      }
+    ]
+  },
+  "babycry": {
+    "category": "neutral",
+    "subtitle": "subtitles.babycry",
+    "sounds": [
+      {
+        "name": "babyeating:baby-cry-101477",
+        "stream": false
+      },
+      {
+        "name": "babyeating:babywwwwaaahhh",
+        "stream": false
+      },
+      {
+        "name": "babyeating:babywah",
+        "stream": false
+      }
+    ]
+  },
+  "happybabysounds": {
+    "category": "neutral",
+    "subtitle": "subtitles.happybabysounds",
+    "sounds": [
+      {
+        "name": "babyeating:hahaha",
+        "stream": false
+      },
+      {
+        "name": "babyeating:hehehahaha",
+        "stream": false
+      },
+      {
+        "name": "babyeating:yapityyap",
+        "stream": false
+      },
+      {
+        "name": "babyeating:yapppppp",
+        "stream": false
+      },
+      {
+        "name": "babyeating:yapyapyap",
+        "stream": false
+      }
+    ]
+  },
+  "babysong": {
+    "category": "music",
+    "subtitle": "subtitles.babysong",
+    "sounds": [
+      {
+        "name": "babyeating:babysong",
+        "stream": true
+      }
+    ]
+  },
+  "momhurt": {
+    "category": "neutral",
+    "subtitle": "subtitles.momhurt",
+    "sounds": [
+      {
+        "name": "babyeating:female-scream-short-251067",
+        "stream": false
+      },
+      {
+        "name": "babyeating:woman-scream-86832",
+        "stream": false
+      },
+      {
+        "name": "babyeating:woman-yelling-high-pitched-2-86821",
+        "stream": false
+      },
+      {
+        "name": "babyeating:young-girl-scream-105037",
+        "stream": false
+      }
+    ]
+  },
+  "momdies": {
+    "category": "neutral",
+    "subtitle": "subtitles.momdies",
+    "sounds": [
+      {
+        "name": "babyeating:female-scream-1-86768",
+        "stream": false
+      },
+      {
+        "name": "babyeating:girl-scream-45657",
+        "stream": false
+      },
+      {
+        "name": "babyeating:young-girl-scream-105037",
+        "stream": false
+      }
+    ]
+  },
+  "momlives": {
+    "category": "neutral",
+    "subtitle": "subtitles.momlives",
+    "sounds": [
+      {
+        "name": "babyeating:swedish-woman-98332",
+        "stream": false
+      },
+      {
+        "name": "babyeating:woman-clearing-throat-fx-39169",
+        "stream": false
+      },
+      {
+        "name": "babyeating:woman-laugh-6421",
+        "stream": false
+      },
+      {
+        "name": "babyeating:woman-scream-86832",
+        "stream": false
+      },
+      {
+        "name": "babyeating:woman-sigh-101931",
+        "stream": false
+      },
+      {
+        "name": "babyeating:woman-sneeze-104997",
+        "stream": false
+      }
+    ]
+  },
+  "pedodeaths": {
+    "category": "neutral",
+    "subtitle": "subtitles.pedodeaths",
+    "sounds": [
+      {
+        "name": "babyeating:pedodeath1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:pedodeath2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:pedodeath3",
+        "stream": false
+      }
+    ]
+  },
+  "pedohurts": {
+    "category": "neutral",
+    "subtitle": "subtitles.pedohurts",
+    "sounds": [
+      {
+        "name": "babyeating:pedohurt1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:pedohurt2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:pedohurt3",
+        "stream": false
+      },
+      {
+        "name": "babyeating:pedohurt4",
+        "stream": false
+      }
+    ]
+  }
+}
