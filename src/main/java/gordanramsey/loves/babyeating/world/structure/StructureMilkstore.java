@@ -17,6 +17,7 @@ import net.minecraft.block.Block;
 
 import java.util.Random;
 
+import gordanramsey.loves.babyeating.world.WorldAfrica;
 import gordanramsey.loves.babyeating.ElementsBabyeatingMod;
 
 @ElementsBabyeatingMod.ModElement.Tag
@@ -31,9 +32,13 @@ public class StructureMilkstore extends ElementsBabyeatingMod.ModElement {
 		boolean isNetherType = false;
 		if (dimID == 0)
 			dimensionCriteria = true;
+		if (dimID == WorldAfrica.DIMID) {
+			dimensionCriteria = true;
+			isNetherType = WorldAfrica.NETHER_TYPE;
+		}
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 10000) {
+		if ((random.nextInt(1000000) + 1) <= 1500) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;
@@ -42,18 +47,15 @@ public class StructureMilkstore extends ElementsBabyeatingMod.ModElement {
 				if (isNetherType) {
 					boolean notpassed = true;
 					while (height > 0) {
-						if (notpassed && (world.isAirBlock(new BlockPos(i, height, k)) || !world.getBlockState(new BlockPos(i, height, k)).getBlock()
-								.getMaterial(world.getBlockState(new BlockPos(i, height, k))).blocksMovement()))
+						if (notpassed && world.isAirBlock(new BlockPos(i, height, k)))
 							notpassed = false;
-						else if (!notpassed && !world.isAirBlock(new BlockPos(i, height, k)) && world.getBlockState(new BlockPos(i, height, k))
-								.getBlock().getMaterial(world.getBlockState(new BlockPos(i, height, k))).blocksMovement())
+						else if (!notpassed && !world.isAirBlock(new BlockPos(i, height, k)))
 							break;
 						height--;
 					}
 				} else {
 					while (height > 0) {
-						if (!world.isAirBlock(new BlockPos(i, height, k)) && world.getBlockState(new BlockPos(i, height, k)).getBlock()
-								.getMaterial(world.getBlockState(new BlockPos(i, height, k))).blocksMovement())
+						if (!world.isAirBlock(new BlockPos(i, height, k)))
 							break;
 						height--;
 					}

@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:deadbush",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "babyeating:underwearslingshot",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "babyeating:durable_dung",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "babyeating:super_glue",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "babyeating:uncooked_baby",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

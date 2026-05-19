@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.registry.EntityEntryBuilder;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
@@ -15,8 +16,10 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.Item;
+import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
+import net.minecraft.entity.ai.EntityAIOpenDoor;
 import net.minecraft.entity.ai.EntityAINearestAttackableTarget;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAIHurtByTarget;
@@ -54,7 +57,8 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 	@Override
 	public void init(FMLInitializationEvent event) {
 		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
-		EntityRegistry.addSpawn(EntityCustom.class, 5, 1, 2, EnumCreatureType.AMBIENT, spawnBiomes);
+		EntityRegistry.addSpawn(EntityCustom.class, 1, 1, 1, EnumCreatureType.CREATURE, spawnBiomes);
+		DungeonHooks.addDungeonMob(new ResourceLocation("babyeating:pregnant_mom"), 180);
 	}
 
 	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
@@ -71,7 +75,7 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			return new RenderLiving(renderManager, new Modelpregnantmom(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("babyeating:textures/pregmom.png");
+					return new ResourceLocation("babyeating:textures/newpregmom.png");
 				}
 			};
 		});
@@ -79,7 +83,7 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 	public static class EntityCustom extends EntityCreature {
 		public EntityCustom(World world) {
 			super(world);
-			setSize(1.4f, 0.9f);
+			setSize(0.5f, 1.75f);
 			experienceValue = 0;
 			this.isImmuneToFire = false;
 			setNoAI(!true);
@@ -89,11 +93,13 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 		protected void initEntityAI() {
 			super.initEntityAI();
 			this.tasks.addTask(1, new EntityAIWander(this, 1));
-			this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, true));
-			this.tasks.addTask(3, new EntityAILookIdle(this));
-			this.tasks.addTask(4, new EntityAISwimming(this));
-			this.tasks.addTask(5, new EntityAIAvoidEntity(this, EntityPedophilr.EntityCustom.class, (float) 6, 1, 1.2));
-			this.targetTasks.addTask(6, new EntityAINearestAttackableTarget(this, EntityPedophilr.EntityCustom.class, true, true));
+			this.tasks.addTask(2, new EntityAILookIdle(this));
+			this.tasks.addTask(3, new EntityAISwimming(this));
+			this.tasks.addTask(4, new EntityAIOpenDoor(this, true));
+			this.tasks.addTask(5, new EntityAIWatchClosest(this, EntityBaby.EntityCustom.class, (float) 6));
+			this.tasks.addTask(6, new EntityAIAvoidEntity(this, EntityPedophilr.EntityCustom.class, (float) 6, 1, 1.2));
+			this.targetTasks.addTask(7, new EntityAIHurtByTarget(this, true));
+			this.targetTasks.addTask(8, new EntityAINearestAttackableTarget(this, EntityPedophilr.EntityCustom.class, true, true));
 		}
 
 		@Override
@@ -140,7 +146,7 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 		}
 	}
 
-	// Made with Blockbench 4.12.5
+	// Made with Blockbench 5.1.3
 	// Exported for Minecraft version 1.7 - 1.12
 	// Paste this class into your mod and generate all required imports
 	public static class Modelpregnantmom extends ModelBase {
@@ -148,8 +154,8 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 		private final ModelRenderer lLeg;
 		private final ModelRenderer rLeg;
 		private final ModelRenderer arms;
-		private final ModelRenderer lArm;
 		private final ModelRenderer rArm;
+		private final ModelRenderer lArm;
 		private final ModelRenderer torso;
 		private final ModelRenderer cube_r1;
 		private final ModelRenderer head;
@@ -158,41 +164,46 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 			textureHeight = 64;
 			legs = new ModelRenderer(this);
 			legs.setRotationPoint(0.0F, 24.0F, 0.0F);
+			setRotationAngle(legs, -3.1416F, 0.0F, 3.1416F);
 			lLeg = new ModelRenderer(this);
-			lLeg.setRotationPoint(-1.0F, -7.0F, 0.0F);
+			lLeg.setRotationPoint(0.0F, -11.0F, 2.0F);
 			legs.addChild(lLeg);
-			lLeg.cubeList.add(new ModelBox(lLeg, 26, 26, -1.0F, 0.0F, -1.0F, 2, 5, 2, 0.0F, false));
-			lLeg.cubeList.add(new ModelBox(lLeg, 22, 30, -1.0F, 5.0F, -1.0F, 2, 2, 3, 0.0F, false));
+			lLeg.cubeList.add(new ModelBox(lLeg, 26, 26, -2.0F, 0.0F, -1.5F, 2, 9, 2, 0.0F, false));
+			lLeg.cubeList.add(new ModelBox(lLeg, 22, 30, -2.0F, 9.0F, -1.5F, 2, 2, 3, 0.0F, false));
 			rLeg = new ModelRenderer(this);
-			rLeg.setRotationPoint(1.0F, -7.0F, 0.0F);
+			rLeg.setRotationPoint(0.0F, -11.0F, 2.0F);
 			legs.addChild(rLeg);
-			rLeg.cubeList.add(new ModelBox(rLeg, 21, 30, -1.0F, 5.0F, -1.0F, 2, 2, 3, 0.0F, false));
-			rLeg.cubeList.add(new ModelBox(rLeg, 18, 26, -1.0F, 0.0F, -1.0F, 2, 5, 2, 0.0F, false));
+			rLeg.cubeList.add(new ModelBox(rLeg, 21, 30, 0.0F, 9.0F, -1.5F, 2, 2, 3, 0.0F, false));
+			rLeg.cubeList.add(new ModelBox(rLeg, 18, 26, 0.0F, 0.0F, -1.5F, 2, 9, 2, 0.0F, false));
 			arms = new ModelRenderer(this);
-			arms.setRotationPoint(0.0F, 24.0F, 0.0F);
-			lArm = new ModelRenderer(this);
-			lArm.setRotationPoint(2.0F, -14.0F, 0.0F);
-			arms.addChild(lArm);
-			lArm.cubeList.add(new ModelBox(lArm, 0, 29, 0.0F, -1.0F, -1.0F, 2, 6, 2, 0.0F, false));
+			arms.setRotationPoint(0.0F, 20.0F, 0.0F);
+			setRotationAngle(arms, -3.1416F, 0.0F, 3.1416F);
 			rArm = new ModelRenderer(this);
-			rArm.setRotationPoint(-2.0F, -14.0F, 0.0F);
+			rArm.setRotationPoint(2.0F, -16.0F, 1.0F);
 			arms.addChild(rArm);
-			rArm.cubeList.add(new ModelBox(rArm, 8, 29, -2.0F, -1.0F, -1.0F, 2, 6, 2, 0.0F, false));
+			rArm.cubeList.add(new ModelBox(rArm, 0, 29, 0.0F, -1.0F, -0.5F, 2, 6, 2, 0.0F, false));
+			lArm = new ModelRenderer(this);
+			lArm.setRotationPoint(-2.0F, -16.0F, 1.0F);
+			arms.addChild(lArm);
+			lArm.cubeList.add(new ModelBox(lArm, 8, 29, -2.0F, -1.0F, -0.5F, 2, 6, 2, 0.0F, false));
 			torso = new ModelRenderer(this);
-			torso.setRotationPoint(0.0F, 14.0F, 0.0F);
-			torso.cubeList.add(new ModelBox(torso, 0, 0, -3.0F, 1.0F, -3.0F, 6, 2, 6, 0.0F, false));
-			torso.cubeList.add(new ModelBox(torso, 0, 8, -2.0F, -2.0F, -2.0F, 4, 4, 6, 0.0F, false));
-			torso.cubeList.add(new ModelBox(torso, 18, 18, -2.0F, -5.0F, -2.0F, 4, 3, 5, 0.0F, false));
+			torso.setRotationPoint(0.0F, 10.0F, 0.0F);
+			setRotationAngle(torso, -3.1416F, 0.0F, 3.1416F);
+			torso.cubeList.add(new ModelBox(torso, 0, 40, -3.0F, 1.0F, -2.5F, 6, 2, 8, 0.0F, false));
+			torso.cubeList.add(new ModelBox(torso, 0, 8, -2.0F, -3.0F, -2.0F, 4, 5, 6, 0.0F, false));
+			torso.cubeList.add(new ModelBox(torso, 0, 8, -2.0F, -3.0F, -1.0F, 4, 5, 6, 0.0F, false));
+			torso.cubeList.add(new ModelBox(torso, 1, 9, -2.0F, -7.0F, -1.75F, 4, 4, 5, 0.0F, false));
 			cube_r1 = new ModelRenderer(this);
-			cube_r1.setRotationPoint(0.0F, -2.0F, 3.0F);
+			cube_r1.setRotationPoint(0.0F, -2.7F, 3.0F);
 			torso.addChild(cube_r1);
 			setRotationAngle(cube_r1, -0.7854F, 0.0F, 0.0F);
-			cube_r1.cubeList.add(new ModelBox(cube_r1, 34, 26, -2.0F, -2.0F, -2.0F, 4, 2, 2, 0.0F, false));
+			cube_r1.cubeList.add(new ModelBox(cube_r1, 3, 11, -2.0F, -3.0F, -3.0F, 4, 3, 3, 0.0F, false));
 			head = new ModelRenderer(this);
-			head.setRotationPoint(0.0F, 9.0F, 0.0F);
+			head.setRotationPoint(0.0F, 3.0F, -1.25F);
+			setRotationAngle(head, 0.0F, 0.0F, 0.0F);
 			head.cubeList.add(new ModelBox(head, 24, 0, -2.0F, -4.0F, -2.0F, 4, 4, 4, 0.0F, false));
-			head.cubeList.add(new ModelBox(head, 0, 18, -2.0F, -7.0F, -4.0F, 4, 6, 5, 0.0F, false));
-			head.cubeList.add(new ModelBox(head, 20, 8, -3.0F, -5.0F, -2.0F, 6, 4, 3, 0.0F, false));
+			head.cubeList.add(new ModelBox(head, 0, 18, -2.0F, -7.0F, -1.0F, 4, 6, 5, 0.0F, false));
+			head.cubeList.add(new ModelBox(head, 20, 8, -3.0F, -5.0F, -0.9F, 6, 4, 3, 0.0F, false));
 		}
 
 		@Override
@@ -215,7 +226,7 @@ public class EntityPregnantMom extends ElementsBabyeatingMod.ModElement {
 			this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 			this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
 			this.lArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
-			this.rLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+			this.rLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 			this.rArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
 		}
 	}

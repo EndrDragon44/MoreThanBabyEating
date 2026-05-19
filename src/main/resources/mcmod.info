@@ -1,16 +1,16 @@
 [
   {
     "modid": "babyeating",
-    "name": "Babies for Lunch",
+    "name": "More than just Babies for Lunch....",
     "description": "A beautiful description of what should be legal in all 50 U.S. States. Unfortunately, Federal Laws are in place for a reason. Yet we are allowed (to some extend) to feed our desires via video games. Here we are! Have fun!",
-    "version": "1.0.0",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "version": "8.0.0",
+    "credits": "Music Copyright © Brandon Fiechter © VOJ   Structures: Tacos2ndalt",
     "logoFile": "assets/babyeating/textures/thumbnail.png",
     "mcversion": "1.12.2",
     "url": "https://mcreator.net",
     "updateUrl": "",
     "authorList": [
-      "Emmet"
+      "EndrDragon44"
     ],
     "dependencies": [],
     "dependants": [],

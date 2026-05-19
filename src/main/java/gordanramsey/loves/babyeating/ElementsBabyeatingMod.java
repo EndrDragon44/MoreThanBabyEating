@@ -67,6 +67,28 @@ public class ElementsBabyeatingMod implements IFuelHandler, IWorldGenerator {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "pedodeaths")));
 		sounds.put(new ResourceLocation("babyeating", "pedohurts"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "pedohurts")));
+		sounds.put(new ResourceLocation("babyeating", "africanvillambiance"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "africanvillambiance")));
+		sounds.put(new ResourceLocation("babyeating", "africavillhurt"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "africavillhurt")));
+		sounds.put(new ResourceLocation("babyeating", "africavilldie"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "africavilldie")));
+		sounds.put(new ResourceLocation("babyeating", "underwearshoot"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "underwearshoot")));
+		sounds.put(new ResourceLocation("babyeating", "village-bgm"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "village-bgm")));
+		sounds.put(new ResourceLocation("babyeating", "drillcollectsound"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "drillcollectsound")));
+		sounds.put(new ResourceLocation("babyeating", "thewaterlessnation"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "thewaterlessnation")));
+		sounds.put(new ResourceLocation("babyeating", "seth-live"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "seth-live")));
+		sounds.put(new ResourceLocation("babyeating", "seth-die"), new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "seth-die")));
+		sounds.put(new ResourceLocation("babyeating", "seth-hit"), new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "seth-hit")));
+		sounds.put(new ResourceLocation("babyeating", "deeg-live"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "deeg-live")));
+		sounds.put(new ResourceLocation("babyeating", "deeg-die"), new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "deeg-die")));
+		sounds.put(new ResourceLocation("babyeating", "deeg-hit"), new net.minecraft.util.SoundEvent(new ResourceLocation("babyeating", "deeg-hit")));
 	}
 
 	public void preInit(FMLPreInitializationEvent event) {

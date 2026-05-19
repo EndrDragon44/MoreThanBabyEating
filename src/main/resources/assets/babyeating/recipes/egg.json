@@ -1,0 +1,16 @@
+{
+  "group": "baby",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "babyeating:sperm"
+    },
+    {
+      "item": "babyeating:unferalized_egg"
+    }
+  ],
+  "result": {
+    "item": "babyeating:fertiliad_egg",
+    "count": 1
+  }
+}

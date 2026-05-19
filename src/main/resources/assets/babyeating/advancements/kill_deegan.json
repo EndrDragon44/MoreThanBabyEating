@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/blocks/stone.png",
+    "icon": {
+      "item": "babyeating:uncooked_baby"
+    },
+    "title": {
+      "translate": "advancements.kill_deegan.title"
+    },
+    "description": {
+      "translate": "advancements.kill_deegan.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "kill_deegan": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

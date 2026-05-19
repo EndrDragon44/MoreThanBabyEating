@@ -1,0 +1,7 @@
+{
+  "_fv": 18,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"entity_remove_item\" x=\"306\" y=\"-14\"><value name=\"amount\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"item_nbt_num_set\"><value name=\"tagName\"><block type=\"entity_name\"><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value><value name=\"tagValue\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value><next><block type=\"entity_execute_command\"><value name=\"command\"><block type=\"text\"><field name=\"TEXT\">give @s minecraft:spawn_egg 1 0 {EntityTag:{id:\"babyeating:baby\"}}</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></next></block></next></block><block type=\"text\" x=\"226\" y=\"149\"><field name=\"TEXT\">eggAge</field></block><block type=\"itemstack_shrink\" x=\"35\" y=\"337\"><value name=\"item\"><block type=\"itemstack_to_mcitem\"></block></value><value name=\"amount\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value></block></xml>"
+  }
+}

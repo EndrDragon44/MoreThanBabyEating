@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "babyeating:africa_portal_ew"
+    },
+    "axis=x": {
+      "model": "babyeating:africa_portal_ns"
+    },
+    "inventory": {
+      "model": "babyeating:africa_portal_ns"
+    }
+  }
+}

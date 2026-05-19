@@ -1,0 +1,47 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [558, 334],
+	"textures": {
+		"3": "PaintingDefault",
+		"particle": "deeganHoldingSouthFlag"
+	},
+	"elements": [
+		{
+			"name": "thePainting",
+			"from": [-16, -14, 14.5],
+			"to": [32, 15, 15.5],
+			"rotation": {"angle": 0, "axis": "x", "origin": [8, 0.5, 15]},
+			"faces": {
+				"north": {"uv": [16, 16, 0, 0], "rotation": 180, "texture": "#3"},
+				"east": {"uv": [2.375, 0.2614, 6, 0.3864], "rotation": 90, "texture": "#3"},
+				"south": {"uv": [6, 0.2614, 0, 0.3864], "rotation": 180, "texture": "#3"},
+				"west": {"uv": [0, 0.33468, 3.625, 0.45968], "rotation": 270, "texture": "#3"},
+				"up": {"uv": [0, 0.30974, 6, 0.43474], "texture": "#3"},
+				"down": {"uv": [0, 0.30974, 6, 0.43474], "rotation": 180, "texture": "#3"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_lefthand": {
+			"rotation": [-5.01, 14.38, 38.28],
+			"translation": [0, 8.75, 0],
+			"scale": [0.24414, 1, 0.20508]
+		},
+		"firstperson_righthand": {
+			"rotation": [97.13, 15.77, 65.29]
+		},
+		"firstperson_lefthand": {
+			"rotation": [107.75, 0, 58]
+		},
+		"gui": {
+			"rotation": [90, 0, 0],
+			"scale": [0.31836, 1, 0.35547]
+		},
+		"fixed": {
+			"rotation": [-0.75, 0, 0],
+			"translation": [0, 7.75, -7.5]
+		}
+	}
+}

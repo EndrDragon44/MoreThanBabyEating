@@ -1,0 +1,42 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "smallmomslipperrotated",
+    "customModelName": "Normal",
+    "name": "Mom's Slipper",
+    "specialInfo": [
+      "Mom's slipper. It doesn't hit hard",
+      "but the dust from the bottom is bothersome! Can be repaired with Leather",
+      "Rabbit Hide",
+      "or String."
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 20,
+    "damageVsEntity": 1.0,
+    "usageCount": 45000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.RABBIT_HIDE"
+      },
+      {
+        "value": "Items.STRING"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

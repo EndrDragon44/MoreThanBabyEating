@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "paintingdefault"
+      },
+      "name": "default"
+    },
+    "deegflag": {
+      "map": {
+        "3": "deeganholdingsouthflag"
+      },
+      "name": "deegflag"
+    },
+    "kfcfight": {
+      "map": {
+        "3": "paintingkfcfight"
+      },
+      "name": "kfcfight"
+    },
+    "monkeymug": {
+      "map": {
+        "3": "paintingmokey"
+      },
+      "name": "monkeymug"
+    }
+  }
+}

@@ -26,7 +26,7 @@ import com.google.common.collect.Multimap;
 
 @ElementsBabyeatingMod.ModElement.Tag
 public class ItemMomsbelt extends ElementsBabyeatingMod.ModElement {
-	@GameRegistry.ObjectHolder("babyeating:momsbelt")
+	@GameRegistry.ObjectHolder("babyeating:dadsbelt")
 	public static final Item block = null;
 	public ItemMomsbelt(ElementsBabyeatingMod instance) {
 		super(instance, 6);
@@ -34,7 +34,7 @@ public class ItemMomsbelt extends ElementsBabyeatingMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("MOMSBELT", 1, 5000, 4f, 8f, 20)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("DADSBELT", 1, 5000, 4f, 8f, 20)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
@@ -52,12 +52,12 @@ public class ItemMomsbelt extends ElementsBabyeatingMod.ModElement {
 				ret.put("sword", 1);
 				return ret.keySet();
 			}
-		}.setUnlocalizedName("momsbelt").setRegistryName("momsbelt").setCreativeTab(CreativeTabs.COMBAT));
+		}.setUnlocalizedName("dadsbelt").setRegistryName("dadsbelt").setCreativeTab(CreativeTabs.COMBAT));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("babyeating:momsbelt", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation("babyeating:dadsbelt", "inventory"));
 	}
 }

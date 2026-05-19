@@ -1,0 +1,17 @@
+{
+  "_fv": 18,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "waternnation1",
+    "name": "Music Disc",
+    "description": "Micheal Blackson - The Waterless Nation",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:thewaterlessnation"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

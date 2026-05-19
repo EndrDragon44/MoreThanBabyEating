@@ -172,5 +172,266 @@
         "stream": false
       }
     ]
+  },
+  "africanvillambiance": {
+    "category": "neutral",
+    "subtitle": "subtitles.africanvillambiance",
+    "sounds": [
+      {
+        "name": "babyeating:amb1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:amb2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:amb3",
+        "stream": false
+      },
+      {
+        "name": "babyeating:amb4",
+        "stream": false
+      },
+      {
+        "name": "babyeating:amb5",
+        "stream": false
+      },
+      {
+        "name": "babyeating:amb6",
+        "stream": false
+      },
+      {
+        "name": "babyeating:amb7",
+        "stream": false
+      }
+    ]
+  },
+  "africavillhurt": {
+    "category": "neutral",
+    "subtitle": "subtitles.africavillhurt",
+    "sounds": [
+      {
+        "name": "babyeating:hurt1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:hurt2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:hurt3",
+        "stream": false
+      },
+      {
+        "name": "babyeating:hurt4",
+        "stream": false
+      },
+      {
+        "name": "babyeating:hurt5",
+        "stream": false
+      },
+      {
+        "name": "babyeating:hurt6",
+        "stream": false
+      },
+      {
+        "name": "babyeating:hurt7",
+        "stream": false
+      }
+    ]
+  },
+  "africavilldie": {
+    "category": "neutral",
+    "subtitle": "subtitles.africavilldie",
+    "sounds": [
+      {
+        "name": "babyeating:die1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:die2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:die3",
+        "stream": false
+      },
+      {
+        "name": "babyeating:die4",
+        "stream": false
+      },
+      {
+        "name": "babyeating:die5",
+        "stream": false
+      },
+      {
+        "name": "babyeating:die6",
+        "stream": false
+      },
+      {
+        "name": "babyeating:die7",
+        "stream": false
+      }
+    ]
+  },
+  "underwearshoot": {
+    "category": "player",
+    "subtitle": "subtitles.underwearshoot",
+    "sounds": [
+      {
+        "name": "babyeating:universfield-funny-spring-jump-140378",
+        "stream": false
+      }
+    ]
+  },
+  "village-bgm": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "babyeating:villagebg1",
+        "stream": true
+      },
+      {
+        "name": "babyeating:villagebg2",
+        "stream": true
+      },
+      {
+        "name": "babyeating:villagebg3",
+        "stream": true
+      }
+    ]
+  },
+  "drillcollectsound": {
+    "category": "player",
+    "subtitle": "subtitles.drillcollectsound",
+    "sounds": [
+      {
+        "name": "babyeating:drillsound",
+        "stream": false
+      }
+    ]
+  },
+  "thewaterlessnation": {
+    "category": "record",
+    "subtitle": "subtitles.thewaterlessnation",
+    "sounds": [
+      {
+        "name": "babyeating:africa_in_3_minutes_and_50_seconds._louis_armstrong_modified_by_lalalai",
+        "stream": true
+      }
+    ]
+  },
+  "seth-live": {
+    "category": "neutral",
+    "subtitle": "subtitles.seth-live",
+    "sounds": [
+      {
+        "name": "babyeating:seth_living1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_living2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_living3",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_living4",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_living5",
+        "stream": false
+      }
+    ]
+  },
+  "seth-die": {
+    "category": "neutral",
+    "subtitle": "subtitles.seth-die",
+    "sounds": [
+      {
+        "name": "babyeating:seth_death1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_death2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_death3",
+        "stream": false
+      }
+    ]
+  },
+  "seth-hit": {
+    "category": "neutral",
+    "subtitle": "subtitles.seth-hit",
+    "sounds": [
+      {
+        "name": "babyeating:seth_hit3",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_hit1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:seth_hit2",
+        "stream": false
+      }
+    ]
+  },
+  "deeg-live": {
+    "category": "neutral",
+    "subtitle": "subtitles.deeg-live",
+    "sounds": [
+      {
+        "name": "babyeating:deegan_living1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:deegan_living2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:deegan_living3",
+        "stream": false
+      }
+    ]
+  },
+  "deeg-die": {
+    "category": "neutral",
+    "subtitle": "subtitles.deeg-die",
+    "sounds": [
+      {
+        "name": "babyeating:deegan_death1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:deegan_death2",
+        "stream": false
+      }
+    ]
+  },
+  "deeg-hit": {
+    "category": "neutral",
+    "subtitle": "subtitles.deeg-hit",
+    "sounds": [
+      {
+        "name": "babyeating:deegan_hit1",
+        "stream": false
+      },
+      {
+        "name": "babyeating:deegan_hit2",
+        "stream": false
+      },
+      {
+        "name": "babyeating:deegan_hit3",
+        "stream": false
+      }
+    ]
   }
 }

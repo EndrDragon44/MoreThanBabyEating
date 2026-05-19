@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "babyeating:blocks/villagemarker_clear",
+    "up": "babyeating:blocks/villagemarker_clear",
+    "north": "babyeating:blocks/villagemarker_clear",
+    "east": "babyeating:blocks/villagemarker_clear",
+    "south": "babyeating:blocks/villagemarker_clear",
+    "west": "babyeating:blocks/villagemarker_clear",
+    "particle": "babyeating:blocks/villagemarker_clear"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "_fv": 18,
+  "_type": "biome",
+  "definition": {
+    "name": "Africavillage",
+    "groundBlock": {
+      "value": "Blocks.DIRT#1"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.RED_SANDSTONE#0"
+    },
+    "airColor": {
+      "value": -12834032,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -8823550,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -8823550,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -8823550,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -14213108,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "CUSTOM:village-bgm"
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "biomeCategory": "DESERT",
+    "parent": {
+      "value": "mutated_mesa"
+    },
+    "rainingPossibility": 0.0,
+    "temperature": 2.0,
+    "baseHeight": 0.2,
+    "heightVariation": 0.30000000000000004,
+    "biomeType": "DESERT",
+    "spawnBiome": false,
+    "biomeWeight": 256,
+    "biomeDictionaryTypes": [],
+    "grassPerChunk": 0,
+    "seagrassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPatchesPerChunk": 3,
+    "gravelPatchesPerChunk": 10,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 2,
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 0,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "Blocks.AIR"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "spawnStronghold": false,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": false,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "oceanRuinType": "NONE",
+    "defaultFeatures": [
+      "Caves",
+      "DeadBushes",
+      "DesertFeatures",
+      "InfestedStone",
+      "MonsterRooms"
+    ],
+    "spawnEntries": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "group": "babyeating",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    " 4 ",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "4": {
+      "item": "minecraft:stained_glass",
+      "data": 1
+    },
+    "6": {
+      "item": "minecraft:sugar"
+    },
+    "7": {
+      "item": "minecraft:glass"
+    },
+    "8": {
+      "item": "minecraft:web"
+    }
+  },
+  "result": {
+    "item": "babyeating:super_glue",
+    "count": 1
+  }
+}

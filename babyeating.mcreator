@@ -1,6 +1,7 @@
 {
   "id_map": {
-    "ENTITY": 6
+    "ENTITY": 25,
+    "DIMENSION": 1
   },
   "mod_elements": [
     {
@@ -70,7 +71,7 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "momsbelt"
+      "registry_name": "dadsbelt"
     },
     {
       "name": "Beltrecipe",
@@ -178,7 +179,7 @@
         "0": 5,
         "1": 6
       },
-      "registry_name": "pedophilr"
+      "registry_name": "pedophile"
     },
     {
       "name": "Milkstore",
@@ -227,6 +228,7 @@
       "ids": {},
       "registry_name": "spermdrill_right_clicked_on_block",
       "metadata": {
+        "return_type": "LOGIC",
         "dependencies": [
           {
             "name": "entity",
@@ -355,15 +357,6 @@
       "registry_name": "spermbariess"
     },
     {
-      "name": "Spermdiamondbar",
-      "type": "recipe",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "spermdiamondbar"
-    },
-    {
       "name": "Spermdabar",
       "type": "recipe",
       "sortid": 31,
@@ -431,6 +424,895 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spermore"
+    },
+    {
+      "name": "Drill",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drill"
+    },
+    {
+      "name": "Africa",
+      "type": "dimension",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 1
+      },
+      "registry_name": "africa",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Waytoafr",
+      "type": "recipe",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "waytoafr"
+    },
+    {
+      "name": "AfricanWater",
+      "type": "fluid",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "african_water"
+    },
+    {
+      "name": "AfricaVillager",
+      "type": "mob",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 7,
+        "1": 8
+      },
+      "registry_name": "africa_villager"
+    },
+    {
+      "name": "DurableDung",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "durable_dung"
+    },
+    {
+      "name": "Underwearslingshot",
+      "type": "gun",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 9
+      },
+      "registry_name": "underwearslingshot"
+    },
+    {
+      "name": "AfricaVillagerOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "africa_villager_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NitwitAfrican",
+      "type": "mob",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 10,
+        "1": 11
+      },
+      "registry_name": "nitwit_african"
+    },
+    {
+      "name": "FarmerAfrican",
+      "type": "mob",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 12,
+        "1": 13
+      },
+      "registry_name": "farmer_african"
+    },
+    {
+      "name": "ButcherAfrican",
+      "type": "mob",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 14,
+        "1": 15
+      },
+      "registry_name": "butcher_african"
+    },
+    {
+      "name": "PriestAfrican",
+      "type": "mob",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 16,
+        "1": 17
+      },
+      "registry_name": "priest_african"
+    },
+    {
+      "name": "BlacksmithAfrican",
+      "type": "mob",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 18,
+        "1": 19
+      },
+      "registry_name": "blacksmith_african"
+    },
+    {
+      "name": "LibrarianAfrican",
+      "type": "mob",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 20,
+        "1": 21
+      },
+      "registry_name": "librarian_african"
+    },
+    {
+      "name": "SpawnCMD",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawncmd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AfVilSpawn",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "af_vil_spawn"
+    },
+    {
+      "name": "AfricanWaterBlockAdded",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "african_water_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Africavillage",
+      "type": "biome",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "africavillage"
+    },
+    {
+      "name": "UnferalizedEgg",
+      "type": "item",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unferalized_egg"
+    },
+    {
+      "name": "FertiliadEgg",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "fertiliad_egg"
+    },
+    {
+      "name": "FertiliadEggItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "fertiliad_egg_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DryWater",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dry_water",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FertiliadEggRightClicked",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fertiliad_egg_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnDungeon",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "spawn_dungeon",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpawnVillage",
+      "type": "command",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_village"
+    },
+    {
+      "name": "AfricaVillageChests",
+      "type": "loottable",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "africa_village_chests"
+    },
+    {
+      "name": "VillageSpawnMarkerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "village_spawn_marker_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VillageSpawnMarker",
+      "type": "block",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "village_spawn_marker"
+    },
+    {
+      "name": "VillageSpawnMarkerUpdateTick",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "village_spawn_marker_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VillageSpawnMarkerAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "village_spawn_marker_additional_generation_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VillageSpawnMarkerRedstoneOn",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "village_spawn_marker_redstone_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AfricanVillage",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "african_village"
+    },
+    {
+      "name": "TheWaterlessNation",
+      "type": "musicdisc",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_waterless_nation"
+    },
+    {
+      "name": "AfricaAchievment",
+      "type": "achievement",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "africa_achievment"
+    },
+    {
+      "name": "AfricaPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "africa_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AfricaPortalTriggerUsed",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "africa_portal_trigger_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Egg",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "egg"
+    },
+    {
+      "name": "MomsSlipper",
+      "type": "tool",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moms_slipper"
+    },
+    {
+      "name": "MomsSlipperLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moms_slipper_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dust",
+      "type": "potion",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "dust"
+    },
+    {
+      "name": "MomsSlipperWearOffEffect",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "moms_slipper_wear_off_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeeganMainBoss",
+      "type": "mob",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 22,
+        "1": 23
+      },
+      "registry_name": "deegan_main_boss"
+    },
+    {
+      "name": "FitInSmallerGapDEEGAN",
+      "type": "procedure",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "fit_in_smaller_gap_deegan",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SethMinion",
+      "type": "mob",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 24,
+        "1": 25
+      },
+      "registry_name": "seth_minion"
+    },
+    {
+      "name": "SethDies",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seth_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DeegDies",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deeg_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KillSeth",
+      "type": "achievement",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kill_seth"
+    },
+    {
+      "name": "KillDeegan",
+      "type": "achievement",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kill_deegan"
+    },
+    {
+      "name": "PaintingWhiteSup",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "painting_white_sup"
+    },
+    {
+      "name": "PaintingWhiteSupBlockIsPlacedBy",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "painting_white_sup_block_is_placed_by",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "DeeganBase",
+      "type": "structure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "deegan_base"
+    },
+    {
+      "name": "SpawnDeeganBase",
+      "type": "command",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_deegan_base"
+    },
+    {
+      "name": "SpawnDeeganBaseCmd",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_deegan_base_cmd",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Supaglue",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "supaglue"
+    },
+    {
+      "name": "SupaglueBottle",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "supaglue_bottle"
+    },
+    {
+      "name": "Spermcrop",
+      "type": "plant",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermcrop"
+    },
+    {
+      "name": "SpermBerries",
+      "type": "food",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sperm_berries"
+    },
+    {
+      "name": "BonemealCustomActions",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bonemeal_custom_actions"
     }
   ],
   "variable_elements": [],
@@ -527,63 +1409,258 @@
       ],
       "category": "neutral",
       "subtitle": "Man gets slapped"
+    },
+    {
+      "name": "africanvillambiance",
+      "files": [
+        "amb1",
+        "amb2",
+        "amb3",
+        "amb4",
+        "amb5",
+        "amb6",
+        "amb7"
+      ],
+      "category": "neutral",
+      "subtitle": "African noise"
+    },
+    {
+      "name": "africavillhurt",
+      "files": [
+        "hurt1",
+        "hurt2",
+        "hurt3",
+        "hurt4",
+        "hurt5",
+        "hurt6",
+        "hurt7"
+      ],
+      "category": "neutral",
+      "subtitle": "African is injured :("
+    },
+    {
+      "name": "africavilldie",
+      "files": [
+        "die1",
+        "die2",
+        "die3",
+        "die4",
+        "die5",
+        "die6",
+        "die7"
+      ],
+      "category": "neutral",
+      "subtitle": "African shrivels up and dies"
+    },
+    {
+      "name": "underwearshoot",
+      "files": [
+        "universfield-funny-spring-jump-140378"
+      ],
+      "category": "player",
+      "subtitle": "Shit has been shot"
+    },
+    {
+      "name": "village-bgm",
+      "files": [
+        "villagebg1",
+        "villagebg2",
+        "villagebg3"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "drillcollectsound",
+      "files": [
+        "drillsound"
+      ],
+      "category": "player",
+      "subtitle": "Drill collects"
+    },
+    {
+      "name": "thewaterlessnation",
+      "files": [
+        "africa_in_3_minutes_and_50_seconds._louis_armstrong_modified_by_lalalai"
+      ],
+      "category": "record",
+      "subtitle": "Record plays"
+    },
+    {
+      "name": "seth-live",
+      "files": [
+        "seth_living1",
+        "seth_living2",
+        "seth_living3",
+        "seth_living4",
+        "seth_living5"
+      ],
+      "category": "neutral",
+      "subtitle": "Autistic Confederate Verbalizes"
+    },
+    {
+      "name": "seth-die",
+      "files": [
+        "seth_death1",
+        "seth_death2",
+        "seth_death3"
+      ],
+      "category": "neutral",
+      "subtitle": "Autistic Confederate Bites Dust"
+    },
+    {
+      "name": "seth-hit",
+      "files": [
+        "seth_hit3",
+        "seth_hit1",
+        "seth_hit2"
+      ],
+      "category": "neutral",
+      "subtitle": "Autistic Confederate is Assaulted"
+    },
+    {
+      "name": "deeg-live",
+      "files": [
+        "deegan_living1",
+        "deegan_living2",
+        "deegan_living3"
+      ],
+      "category": "neutral",
+      "subtitle": "White Supremacist Verbalizes"
+    },
+    {
+      "name": "deeg-die",
+      "files": [
+        "deegan_death1",
+        "deegan_death2"
+      ],
+      "category": "neutral",
+      "subtitle": "White Supremacist Gets Fucking Decimated"
+    },
+    {
+      "name": "deeg-hit",
+      "files": [
+        "deegan_hit1",
+        "deegan_hit2",
+        "deegan_hit3"
+      ],
+      "category": "neutral",
+      "subtitle": "White Supremacist Gets Violated"
     }
   ],
   "language_map": {
     "en_us": {
-      "tipped_arrow.effect.babyformula": "Arrow of Baby Formula",
+      "entity.blacksmith_african.name": "Blacksmith",
+      "item.record.the_waterless_nation.desc": "Micheal Blackson - The Waterless Nation",
       "subtitles.pedohurts": "Man gets slapped",
+      "item.moms_slipper.name": "Mom\u0027s Slipper",
+      "item.the_waterless_nation.name": "Music Disc",
       "splash_potion.effect.babyformula": "Splash Baby Formula",
-      "entity.pregnant_mom.name": "Pregnant Woman",
       "item.sperm.name": "Raw Sperm",
-      "item.reinforced_sperm_bar.name": "Reinforced Sperm Bar",
-      "subtitles.pedolaughs": "Man chuckles",
-      "item.momsbelt.name": "Belt",
+      "entity.pregnant_mom.name": "Pregnant Woman",
+      "splash_potion.effect.dust": "Splash Dust",
+      "tile.village_spawn_marker.name": "Village Spawn Marker",
       "item.reinforced_sperm_armor_armorlegs.name": "Reinforced Sperm Leggings",
+      "subtitles.africanvillambiance": "African noise",
+      "entity.farmer_african.name": "Farmer",
+      "item.sperm_berries.name": "Sperm Berries",
+      "subtitles.seth_dies": "Confederate Minion bites dust",
       "subtitles.happybabysounds": "Baby yaps",
+      "item.unferalized_egg.name": "Unfertilized Egg",
+      "subtitles.drillcollectsound": "Drill collects",
       "item.reinforced_sperm_armor_armorbody.name": "Reinforced Sperm Chestplate",
       "subtitles.momdies": "Woman fucking dies",
-      "item.sperm_bar.name": "Sperm Bar",
       "item.babydisc.name": "Music Disc",
       "potion.effect.babyformula": "Baby Formula",
-      "subtitles.death": "Baby dies",
-      "subtitles.babysong": "Baby DJs",
       "item.record.babydisc.desc": "Baby - Mom took my iPad away",
+      "entity.deegan_main_boss.name": "The White Supremacist",
       "subtitles.momlives": "Woman yaps",
-      "entity.baby.name": "Baby",
-      "subtitles.babycry": "Baby wails",
-      "item.uncooked_baby.name": "Raw Baby",
+      "entity.seth_minion.name": "The Minions of the White Supremacist",
+      "advancements.africa_achievment.descr": "Enter Africa for the first time.",
       "subtitles.laughguy": "Man laughs",
+      "item.africa.name": "The Way to Africa™",
+      "subtitles.africavilldie": "African shrivels up and dies",
+      "effect.dust": "Dust",
+      "subtitles.seth_living": "Confederate Minion Verbalizes",
       "subtitles.pedodeaths": "Man was annihilated",
       "tile.spermore.name": "Sperm Ore",
       "item.spermdrill.name": "Sperm Drill",
-      "effect.babyformula": "Baby Formula",
       "item.hardened_sperm.name": "Hardened Sperm",
+      "potion.effect.dust": "Dust",
+      "tile.painting_white_sup.name": "Deegan\u0027s E-Paintings and TVs",
       "lingering_potion.effect.babyformula": "Lingering Baby Formula",
+      "subtitles.deeg_living": "Deegan Verbalizes",
+      "item.underwearslingshot.name": "Underwearslingshot",
+      "subtitles.deeg-live": "White Supremacist Verbalizes",
+      "item.cooked_baby.name": "Cooked Baby",
+      "advancements.killthebab.title": "Player, don\u0027t hurt me... Don\u0027t hurt me... No more...",
+      "entity.nitwit_african.name": "Nitwit",
+      "item.stronger_clay.name": "Stronger Clay",
+      "advancements.kill_seth.descr": "You killed one of the White Supremacist\u0027s minions. The caveat, however, is that they are all autistic. You monster...",
+      "advancements.kill_deegan.descr": "You killed the White Supremacist, and saved the slaves!",
+      "subtitles.village-bgm": "",
+      "tipped_arrow.effect.babyformula": "Arrow of Baby Formula",
+      "subtitles.seth_hit": "Autistic Confederate getting beat",
+      "entity.africa_villager.name": "African",
+      "item.reinforced_sperm_bar.name": "Reinforced Sperm Bar",
+      "entity.butcher_african.name": "Butcher",
+      "subtitles.seth-hit": "Autistic Confederate is Assaulted",
+      "entity.librarian_african.name": "Librarian",
+      "subtitles.pedolaughs": "Man chuckles",
+      "tipped_arrow.effect.dust": "Arrow of Dust",
+      "fluid.african_water": "AfricanWater",
+      "subtitles.deeg_dies": "Deegan gets Decimated",
+      "subtitles.thewaterlessnation": "Record plays",
+      "subtitles.seth-die": "Autistic Confederate Bites Dust",
+      "item.sperm_bar.name": "Sperm Bar",
+      "tile.spermcrop.name": "Bundle of Sperm Berries",
+      "subtitles.babysong": "Baby DJs",
+      "subtitles.death": "Baby dies",
+      "subtitles.deeg_hit": "Deegan gets Violated",
+      "entity.priest_african.name": "Priest",
+      "item.durable_dung.name": "Durable Dung",
+      "entity.baby.name": "Baby",
+      "subtitles.babycry": "Baby wails",
+      "item.uncooked_baby.name": "Raw Baby",
+      "item.fertiliad_egg.name": "Fertilized Egg",
+      "effect.babyformula": "Baby Formula",
+      "lingering_potion.effect.dust": "Lingering Dust",
+      "subtitles.deeg-die": "White Supremacist Gets Fucking Decimated",
+      "subtitles.seth-live": "Autistic Confederate Verbalizes",
+      "item.dadsbelt.name": "Dad\u0027s Belt",
       "item.reinforced_sperm_armor_armorboots.name": "Reinforced Sperm Boots",
       "subtitles.pedolaughing": "Man chuckles",
       "fluid.placenta": "Placenta",
       "advancements.killthebab.descr": "Defeat a baby. Midnight snack that is hard to find in the dark.",
-      "entity.pedophilr.name": "Pedophile",
-      "item.cooked_baby.name": "Cooked Baby",
+      "subtitles.africavillhurt": "African is injured :(",
+      "entity.pedophile.name": "Pedophile",
+      "advancements.africa_achievment.title": "People live in this place?",
       "item.super_glue.name": "Super Glue",
       "item.reinforced_sperm_armor_armorhelmet.name": "Reinforced Sperm Helmet",
+      "advancements.kill_deegan.title": "Liberation of Africa!",
       "subtitles.momhurt": "Woman is assaulted",
-      "advancements.killthebab.title": "Player, don\u0027t hurt me... Don\u0027t hurt me... No more...",
       "subtitles.babydeath": "Baby dies",
-      "item.stronger_clay.name": "Stronger Clay"
+      "subtitles.deeg-hit": "White Supremacist Gets Violated",
+      "subtitles.underwearshoot": "Shit has been shot",
+      "advancements.kill_seth.title": "You\u0027re so canceled..."
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "items",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "babyeating",
-    "modName": "Babies for Lunch",
-    "version": "1.0.0",
+    "modName": "More than just Babies for Lunch....",
+    "version": "8.0.0",
     "description": "A beautiful description of what should be legal in all 50 U.S. States. Unfortunately, Federal Laws are in place for a reason. Yet we are allowed (to some extend) to feed our desires via video games. Here we are! Have fun!",
-    "author": "Emmet",
+    "author": "EndrDragon44",
+    "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.00",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -593,6 +1670,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.12.2",
+    "credits": "Music Copyright © Brandon Fiechter © VOJ   Structures: Tacos2ndalt",
     "modElementsPackage": "gordanramsey.loves.babyeating",
     "lockBaseModFiles": false
   },

@@ -45,7 +45,7 @@ import java.util.function.Supplier;
 @Mod(modid = BabyeatingMod.MODID, version = BabyeatingMod.VERSION)
 public class BabyeatingMod {
 	public static final String MODID = "babyeating";
-	public static final String VERSION = "1.0.0";
+	public static final String VERSION = "8.0.0";
 	public static final SimpleNetworkWrapper PACKET_HANDLER = NetworkRegistry.INSTANCE.newSimpleChannel("babyeating:a");
 	@SidedProxy(clientSide = "gordanramsey.loves.babyeating.ClientProxyBabyeatingMod", serverSide = "gordanramsey.loves.babyeating.ServerProxyBabyeatingMod")
 	public static IProxyBabyeatingMod proxy;

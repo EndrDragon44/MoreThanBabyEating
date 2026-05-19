@@ -5,8 +5,8 @@
     "mobName": "Pedophile",
     "mobLabel": "",
     "mobModelName": "Modelpedo",
-    "mobModelTexture": "texurepants.png",
-    "mobModelGlowTexture": "textureno_pants.png",
+    "mobModelTexture": "newtexturepants.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -111,10 +111,10 @@
     "rangedItemType": "Default item",
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
-    "spawningProbability": 3,
+    "spawningProbability": 1,
     "mobSpawningType": "ambient",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 2,
+    "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [],
     "spawnInDungeons": false
   }

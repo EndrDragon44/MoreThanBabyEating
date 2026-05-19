@@ -1,0 +1,28 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "village_spawn_marker",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 5000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "CUSTOM:Africa"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "VillageSpawnMarkerAdditionalGenerationCondition"
+    },
+    "onStructureGenerated": {
+      "name": "SpawnDungeon"
+    }
+  }
+}

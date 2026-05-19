@@ -1,0 +1,132 @@
+{
+  "_fv": 18,
+  "_type": "block",
+  "definition": {
+    "texture": "villagemarker_clear",
+    "textureTop": "villagemarker_clear",
+    "textureLeft": "villagemarker_clear",
+    "textureFront": "villagemarker_clear",
+    "textureRight": "villagemarker_clear",
+    "textureBack": "villagemarker_clear",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "image-removebg-preview_6",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": true,
+    "transparencyType": "CUTOUT",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Village Spawn Marker",
+    "specialInfo": [
+      "Immediately spawns a African Village for debugging. Use /give and add {InteractiveMode:True} to disable auto spawn so you can right click it."
+    ],
+    "hardness": 2.5,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "destroyTool": "Not specified",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 0,
+    "useLootTableForDrops": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "IRON"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "AIR",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "FENCE",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "ANVIL"
+    },
+    "luminance": 0,
+    "unbreakable": true,
+    "breakHarvestLevel": 1,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": true,
+    "guiBoundTo": "<NONE>",
+    "openGUIOnRightClick": false,
+    "inventorySize": 0,
+    "inventoryStackSize": 1,
+    "inventoryDropWhenDestroyed": false,
+    "inventoryComparatorPower": false,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "VillageSpawnMarkerOnBlockRightClicked"
+    },
+    "onBlockAdded": {
+      "name": "VillageSpawnMarkerUpdateTick"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "VillageSpawnMarkerUpdateTick"
+    },
+    "onTickUpdate": {
+      "name": "VillageSpawnMarkerUpdateTick"
+    },
+    "onBlockPlayedBy": {
+      "name": "VillageSpawnMarkerUpdateTick"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "frequencyPerChunks": 1,
+    "frequencyOnChunk": 1,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 147,
+    "generateCondition": {
+      "name": "VillageSpawnMarkerAdditionalGenerationCondition"
+    }
+  }
+}

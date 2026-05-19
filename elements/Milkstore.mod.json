@@ -4,8 +4,8 @@
   "definition": {
     "structure": "milk_store",
     "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 1500,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,7 +13,8 @@
     "spawnXOffset": 0,
     "spawnZOffset": 0,
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:Africa"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [],

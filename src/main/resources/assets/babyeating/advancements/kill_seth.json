@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/blocks/stone.png",
+    "icon": {
+      "item": "minecraft:poisonous_potato"
+    },
+    "title": {
+      "translate": "advancements.kill_seth.title"
+    },
+    "description": {
+      "translate": "advancements.kill_seth.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "kill_seth": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  }
+}

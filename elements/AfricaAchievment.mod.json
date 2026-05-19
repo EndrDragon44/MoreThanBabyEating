@@ -1,0 +1,25 @@
+{
+  "_fv": 18,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "People live in this place?",
+    "achievementDescription": "Enter Africa for the first time.",
+    "achievementIcon": {
+      "value": "CUSTOM:DurableDung"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 25,
+    "achievementType": "goal",
+    "parent": {
+      "value": "nether/find_fortress"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" collapsed=\"true\" x=\"86\" y=\"45\"><field name=\"dimension\">CUSTOM:Africa</field></block><block type=\"custom_trigger\" x=\"64\" y=\"76\"><next><block type=\"advancement_trigger\" collapsed=\"true\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

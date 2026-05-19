@@ -9,15 +9,15 @@
     "group": "",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "CUSTOM:SpermBar"
+      "value": "Items.GLASS_BOTTLE"
     },
     "brewingIngredientStack": {
-      "value": "Items.DIAMOND"
+      "value": "CUSTOM:Sperm"
     },
     "brewingReturnStack": {
-      "value": "CUSTOM:ReinforcedSpermBar"
+      "value": "CUSTOM:SuperGlue"
     },
-    "name": "spermdiamondbar",
+    "name": "supaglue_bottle",
     "namespace": "mod"
   }
 }

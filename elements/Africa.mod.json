@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "mutated_desert"
+      },
+      {
+        "value": "mutated_mesa"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "fluidBlock": {
+      "value": "Blocks.AIR"
+    },
+    "airColor": {
+      "value": -7505313,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": true,
+    "isDark": false,
+    "doesWaterVaporize": true,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "Blocks.RED_NETHER_BRICK"
+    },
+    "portalParticles": {
+      "value": "DAMAGE_INDICATOR"
+    },
+    "portalLuminance": 4,
+    "portalSound": {
+      "value": ""
+    },
+    "igniterName": "The Way to Africa™",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "way2africa",
+    "portalTexture": "africaportal",
+    "enablePortal": true
+  }
+}
