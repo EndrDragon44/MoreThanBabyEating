@@ -1,0 +1,27 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "hole-redsand",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 50000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface",
+      "CUSTOM:Africa"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.SAND#1"
+      }
+    ],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

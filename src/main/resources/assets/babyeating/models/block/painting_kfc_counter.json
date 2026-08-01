@@ -1,0 +1,8 @@
+{
+  "parent": "babyeating:custom/deeganpainting",
+  "textures": {
+    "all": "babyeating:blocks/deeganpaintingkfc2",
+    "particle": "babyeating:blocks/deeganpaintingkfc2",
+    "0": "babyeating:blocks/deeganpaintingkfc2"
+  }
+}

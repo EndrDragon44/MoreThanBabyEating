@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "stage=1": { "model": "babyeating:spermcrop_stage1" },
+    "stage=2": { "model": "babyeating:spermcrop_stage2" },
+    "stage=3": { "model": "babyeating:spermcrop_stage3" },
+    "stage=4": { "model": "babyeating:spermcrop_stage4" }
+  }
+}

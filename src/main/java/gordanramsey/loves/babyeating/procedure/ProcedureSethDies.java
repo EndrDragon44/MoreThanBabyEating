@@ -24,8 +24,8 @@ public class ProcedureSethDies extends ElementsBabyeatingMod.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			System.err.println("Failed to load dependency entity for procedure SethDies!");
+		if (dependencies.get("sourceentity") == null) {
+			System.err.println("Failed to load dependency sourceentity for procedure SethDies!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
@@ -44,26 +44,26 @@ public class ProcedureSethDies extends ElementsBabyeatingMod.ModElement {
 			System.err.println("Failed to load dependency world for procedure SethDies!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
+		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		ItemStack itemToDrop = ItemStack.EMPTY;
 		double random = 0;
-		random = (double) Math.random();
-		if (entity instanceof EntityPlayerMP) {
-			Advancement _adv = ((MinecraftServer) ((EntityPlayerMP) entity).mcServer).getAdvancementManager()
+		if (sourceentity instanceof EntityPlayerMP) {
+			Advancement _adv = ((MinecraftServer) ((EntityPlayerMP) sourceentity).mcServer).getAdvancementManager()
 					.getAdvancement(new ResourceLocation("babyeating:kill_seth"));
-			AdvancementProgress _ap = ((EntityPlayerMP) entity).getAdvancements().getProgress(_adv);
+			AdvancementProgress _ap = ((EntityPlayerMP) sourceentity).getAdvancements().getProgress(_adv);
 			if (!_ap.isDone()) {
 				Iterator _iterator = _ap.getRemaningCriteria().iterator();
 				while (_iterator.hasNext()) {
 					String _criterion = (String) _iterator.next();
-					((EntityPlayerMP) entity).getAdvancements().grantCriterion(_adv, _criterion);
+					((EntityPlayerMP) sourceentity).getAdvancements().grantCriterion(_adv, _criterion);
 				}
 			}
 		}
+		random = (double) Math.random();
 		if (((random) < 0.1)) {
 			random = (double) Math.random();
 			if (((random) > 0.5)) {

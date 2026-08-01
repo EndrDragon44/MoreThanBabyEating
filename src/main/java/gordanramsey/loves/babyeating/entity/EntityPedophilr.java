@@ -53,7 +53,7 @@ public class EntityPedophilr extends ElementsBabyeatingMod.ModElement {
 	@Override
 	public void init(FMLInitializationEvent event) {
 		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
-		EntityRegistry.addSpawn(EntityCustom.class, 1, 1, 1, EnumCreatureType.AMBIENT, spawnBiomes);
+		EntityRegistry.addSpawn(EntityCustom.class, 1, 1, 1, EnumCreatureType.CREATURE, spawnBiomes);
 	}
 
 	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {

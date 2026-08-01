@@ -1,0 +1,25 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [128, 128],
+	"textures": {
+		"0": "DeeganPaintingNew",
+		"particle": "DeeganPaintingNew"
+	},
+	"elements": [
+		{
+			"name": "thePainting",
+			"from": [-16, -14, 14.5],
+			"to": [32, 15, 15.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0.5, 15]},
+			"faces": {
+				"north": {"uv": [0, 0, 7.975, 7.7], "texture": "#0"},
+				"east": {"uv": [3.375, 7.75, 3.5, 11.375], "texture": "#0"},
+				"south": {"uv": [0, 7.775, 8.15, 15.475], "texture": "#0"},
+				"west": {"uv": [8.1375, 0.0875, 7.9875, 5.8375], "texture": "#0"},
+				"up": {"uv": [7.4375, 8.7625, 1.4375, 7.95], "texture": "#0"},
+				"down": {"uv": [7.25, 9.6, 0.3125, 9.9625], "texture": "#0"}
+			}
+		}
+	]
+}

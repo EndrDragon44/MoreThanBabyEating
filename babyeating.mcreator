@@ -1,7 +1,8 @@
 {
   "id_map": {
+    "DIMENSION": 1,
     "ENTITY": 25,
-    "DIMENSION": 1
+    "GUI": 1
   },
   "mod_elements": [
     {
@@ -456,15 +457,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "waytoafr"
-    },
-    {
-      "name": "AfricanWater",
-      "type": "fluid",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "african_water"
     },
     {
       "name": "AfricaVillager",
@@ -1034,15 +1026,6 @@
       }
     },
     {
-      "name": "Dust",
-      "type": "potion",
-      "sortid": 78,
-      "compiles": true,
-      "locked_code": true,
-      "ids": {},
-      "registry_name": "dust"
-    },
-    {
       "name": "MomsSlipperWearOffEffect",
       "type": "procedure",
       "sortid": 79,
@@ -1128,7 +1111,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -1161,7 +1144,7 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
+            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -1200,15 +1183,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "kill_deegan"
-    },
-    {
-      "name": "PaintingWhiteSup",
-      "type": "block",
-      "sortid": 88,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "painting_white_sup"
     },
     {
       "name": "PaintingWhiteSupBlockIsPlacedBy",
@@ -1292,7 +1266,7 @@
       "type": "plant",
       "sortid": 95,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "spermcrop"
     },
@@ -1313,6 +1287,317 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "bonemeal_custom_actions"
+    },
+    {
+      "name": "SpermcropUpdateTick",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spermcrop_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoleGUI",
+      "type": "gui",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1
+      },
+      "registry_name": "hole_gui"
+    },
+    {
+      "name": "DehydratedHoleDirts",
+      "type": "block",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dehydrated_hole_dirt"
+    },
+    {
+      "name": "DehydratedHoleTick",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dehydrated_hole_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DehydratedHoleInteract",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dehydrated_hole_interact",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoleGUIOpen",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_gui_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoleGUIPress",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_gui_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoleGUISlotEmpties",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_gui_slot_empties",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DehydratedHoleStone",
+      "type": "block",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dehydrated_hole_stone"
+    },
+    {
+      "name": "DehydratedHoleSand",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dehydrated_hole_sand"
+    },
+    {
+      "name": "DehydratedHoleRedSand",
+      "type": "block",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dehydrated_hole_red_sand"
+    },
+    {
+      "name": "DehydratedHoleSandstone",
+      "type": "block",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dehydrated_hole_sandstone"
+    },
+    {
+      "name": "HoleDirtSpawn",
+      "type": "structure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_dirt_spawn"
+    },
+    {
+      "name": "HoleStoneSpawn",
+      "type": "structure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_stone_spawn"
+    },
+    {
+      "name": "HoleSandSpawn",
+      "type": "structure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_sand_spawn"
+    },
+    {
+      "name": "HoleSandstoneSpawn",
+      "type": "structure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_sandstone_spawn"
+    },
+    {
+      "name": "HoleRedSandSpawn",
+      "type": "structure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hole_red_sand_spawn"
+    },
+    {
+      "name": "PaintingKFC",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "painting_kfc"
+    },
+    {
+      "name": "PaintingKFCCounter",
+      "type": "block",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "painting_kfc_counter"
+    },
+    {
+      "name": "PaintingMonkey",
+      "type": "block",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "painting_monkey"
+    },
+    {
+      "name": "PaintingPringle",
+      "type": "block",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "painting_pringle"
     }
   ],
   "variable_elements": [],
@@ -1556,43 +1841,45 @@
       "item.moms_slipper.name": "Mom\u0027s Slipper",
       "item.the_waterless_nation.name": "Music Disc",
       "splash_potion.effect.babyformula": "Splash Baby Formula",
-      "item.sperm.name": "Raw Sperm",
       "entity.pregnant_mom.name": "Pregnant Woman",
-      "splash_potion.effect.dust": "Splash Dust",
+      "item.sperm.name": "Raw Sperm",
       "tile.village_spawn_marker.name": "Village Spawn Marker",
       "item.reinforced_sperm_armor_armorlegs.name": "Reinforced Sperm Leggings",
       "subtitles.africanvillambiance": "African noise",
       "entity.farmer_african.name": "Farmer",
+      "tile.dehydrated_hole_sand.name": "Dehydrated Hole (Sand)",
       "item.sperm_berries.name": "Sperm Berries",
       "subtitles.seth_dies": "Confederate Minion bites dust",
       "subtitles.happybabysounds": "Baby yaps",
       "item.unferalized_egg.name": "Unfertilized Egg",
       "subtitles.drillcollectsound": "Drill collects",
       "item.reinforced_sperm_armor_armorbody.name": "Reinforced Sperm Chestplate",
+      "tile.dehydrated_hole_red_sand.name": "Dehydrated Hole (Red Sand)",
       "subtitles.momdies": "Woman fucking dies",
       "item.babydisc.name": "Music Disc",
       "potion.effect.babyformula": "Baby Formula",
-      "item.record.babydisc.desc": "Baby - Mom took my iPad away",
+      "tile.dehydrated_hole_dirt.name": "Dehydrated Hole (Dirt)",
       "entity.deegan_main_boss.name": "The White Supremacist",
+      "item.record.babydisc.desc": "Baby - Mom took my iPad away",
       "subtitles.momlives": "Woman yaps",
       "entity.seth_minion.name": "The Minions of the White Supremacist",
       "advancements.africa_achievment.descr": "Enter Africa for the first time.",
-      "subtitles.laughguy": "Man laughs",
-      "item.africa.name": "The Way to Africa™",
-      "subtitles.africavilldie": "African shrivels up and dies",
-      "effect.dust": "Dust",
       "subtitles.seth_living": "Confederate Minion Verbalizes",
+      "subtitles.africavilldie": "African shrivels up and dies",
+      "item.africa.name": "The Way to Africa™",
+      "subtitles.laughguy": "Man laughs",
       "subtitles.pedodeaths": "Man was annihilated",
       "tile.spermore.name": "Sperm Ore",
       "item.spermdrill.name": "Sperm Drill",
       "item.hardened_sperm.name": "Hardened Sperm",
-      "potion.effect.dust": "Dust",
-      "tile.painting_white_sup.name": "Deegan\u0027s E-Paintings and TVs",
+      "tile.painting_kfc_counter.name": "Deegan\u0027s Painting (KFC Counter)",
       "lingering_potion.effect.babyformula": "Lingering Baby Formula",
       "subtitles.deeg_living": "Deegan Verbalizes",
-      "item.underwearslingshot.name": "Underwearslingshot",
+      "tile.painting_pringle.name": "Deegan\u0027s Painting (Pringle)",
       "subtitles.deeg-live": "White Supremacist Verbalizes",
+      "item.underwearslingshot.name": "Underwearslingshot",
       "item.cooked_baby.name": "Cooked Baby",
+      "tile.painting_monkey.name": "Deegan\u0027s Painting (Monkey)",
       "advancements.killthebab.title": "Player, don\u0027t hurt me... Don\u0027t hurt me... No more...",
       "entity.nitwit_african.name": "Nitwit",
       "item.stronger_clay.name": "Stronger Clay",
@@ -1605,11 +1892,11 @@
       "item.reinforced_sperm_bar.name": "Reinforced Sperm Bar",
       "entity.butcher_african.name": "Butcher",
       "subtitles.seth-hit": "Autistic Confederate is Assaulted",
+      "tile.dehydrated_hole_sandstone.name": "Dehydrated Hole (Sandstone)",
       "entity.librarian_african.name": "Librarian",
       "subtitles.pedolaughs": "Man chuckles",
-      "tipped_arrow.effect.dust": "Arrow of Dust",
-      "fluid.african_water": "AfricanWater",
       "subtitles.deeg_dies": "Deegan gets Decimated",
+      "tile.painting_kfc.name": "Deegan\u0027s Painting (KFC Fight)",
       "subtitles.thewaterlessnation": "Record plays",
       "subtitles.seth-die": "Autistic Confederate Bites Dust",
       "item.sperm_bar.name": "Sperm Bar",
@@ -1621,22 +1908,22 @@
       "item.durable_dung.name": "Durable Dung",
       "entity.baby.name": "Baby",
       "subtitles.babycry": "Baby wails",
-      "item.uncooked_baby.name": "Raw Baby",
       "item.fertiliad_egg.name": "Fertilized Egg",
+      "item.uncooked_baby.name": "Raw Baby",
       "effect.babyformula": "Baby Formula",
-      "lingering_potion.effect.dust": "Lingering Dust",
       "subtitles.deeg-die": "White Supremacist Gets Fucking Decimated",
       "subtitles.seth-live": "Autistic Confederate Verbalizes",
       "item.dadsbelt.name": "Dad\u0027s Belt",
+      "tile.dehydrated_hole_stone.name": "Dehydrated Hole (Stone)",
       "item.reinforced_sperm_armor_armorboots.name": "Reinforced Sperm Boots",
       "subtitles.pedolaughing": "Man chuckles",
       "fluid.placenta": "Placenta",
-      "advancements.killthebab.descr": "Defeat a baby. Midnight snack that is hard to find in the dark.",
       "subtitles.africavillhurt": "African is injured :(",
-      "entity.pedophile.name": "Pedophile",
+      "advancements.killthebab.descr": "Defeat a baby. Midnight snack that is hard to find in the dark.",
       "advancements.africa_achievment.title": "People live in this place?",
-      "item.super_glue.name": "Super Glue",
+      "entity.pedophile.name": "Pedophile",
       "item.reinforced_sperm_armor_armorhelmet.name": "Reinforced Sperm Helmet",
+      "item.super_glue.name": "Super Glue",
       "advancements.kill_deegan.title": "Liberation of Africa!",
       "subtitles.momhurt": "Woman is assaulted",
       "subtitles.babydeath": "Baby dies",
@@ -1660,7 +1947,6 @@
     "version": "8.0.0",
     "description": "A beautiful description of what should be legal in all 50 U.S. States. Unfortunately, Federal Laws are in place for a reason. Yet we are allowed (to some extend) to feed our desires via video games. Here we are! Have fun!",
     "author": "EndrDragon44",
-    "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.00",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

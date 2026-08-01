@@ -36,7 +36,6 @@ import java.util.Map;
 import java.util.HashMap;
 
 import gordanramsey.loves.babyeating.procedure.ProcedureFitInSmallerGapDEEGAN;
-import gordanramsey.loves.babyeating.procedure.ProcedureDeegDies;
 import gordanramsey.loves.babyeating.ElementsBabyeatingMod;
 
 @ElementsBabyeatingMod.ModElement.Tag
@@ -135,24 +134,6 @@ public class EntityDeeganMainBoss extends ElementsBabyeatingMod.ModElement {
 			if (source == DamageSource.CACTUS)
 				return false;
 			return super.attackEntityFrom(source, amount);
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			int x = (int) this.posX;
-			int y = (int) this.posY;
-			int z = (int) this.posZ;
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedureDeegDies.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

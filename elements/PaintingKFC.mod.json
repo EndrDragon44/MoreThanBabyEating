@@ -2,15 +2,15 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "deeganholdingsouthflag",
+    "texture": "deeganpaintingkfc",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "block-model_5x3-painting:default",
-    "rotationMode": 3,
+    "customModelName": "deeganpainting:kfc",
+    "rotationMode": 1,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "whitesuppainting_item",
@@ -19,14 +19,24 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
-    "boundingBoxes": [],
-    "name": "Deegan's E-Paintings and TVs",
-    "specialInfo": [
-      "An amazing type of painting used in the White Supremacist Building in Africa! Keep out of reach and sight of children and conspiracy theorists."
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
     ],
-    "hardness": 0.05,
+    "name": "Deegan's Painting (KFC Fight)",
+    "specialInfo": [
+      "A special display for the White Supremacy Building in Africa."
+    ],
+    "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -35,7 +45,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Items.PAINTING"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -44,31 +54,31 @@
     "canProvidePower": false,
     "lightOpacity": 0,
     "material": {
-      "value": "CLOTH"
+      "value": "IRON"
     },
     "tickRate": 10,
     "tickRandomly": false,
-    "isReplaceable": false,
-    "colorOnMap": "AIR",
+    "isReplaceable": true,
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
     "offsetType": "NONE",
     "aiPathNodeType": "BLOCKED",
-    "flammability": 0,
+    "flammability": 1,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "soundOnStep": {
       "value": "WOOD"
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": -1,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -76,7 +86,7 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "hasInventory": true,
+    "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,

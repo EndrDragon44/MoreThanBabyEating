@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "babyeating:painting_kfc_counter"
+    },
+    "facing=north": {
+      "model": "babyeating:painting_kfc_counter"
+    },
+    "facing=east": {
+      "model": "babyeating:painting_kfc_counter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "babyeating:painting_kfc_counter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "babyeating:painting_kfc_counter",
+      "y": 270
+    }
+  }
+}

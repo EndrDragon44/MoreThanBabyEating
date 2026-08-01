@@ -1,0 +1,39 @@
+{
+  "_fv": 18,
+  "_type": "structure",
+  "definition": {
+    "structure": "hole-stone",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First block",
+    "spawnProbability": 50000,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface",
+      "CUSTOM:Africa"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      },
+      {
+        "value": "Blocks.MONSTER_EGG#0"
+      }
+    ],
+    "restrictionBiomes": [],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

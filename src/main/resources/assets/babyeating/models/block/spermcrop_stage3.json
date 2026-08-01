@@ -1,0 +1,6 @@
+{
+  "parent": "babyeating:block/crop",
+  "textures": {
+    "crop": "babyeating:blocks/spermcroppd-3"
+  }
+}

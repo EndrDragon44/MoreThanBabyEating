@@ -30,7 +30,7 @@
 	</classpathentry>
 	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8/"/>
-	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12/forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12/forge-1.12.2-14.23.5.2855_mapped_snapshot_20171003-1.12-recomp.jar">
+	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12/forge-1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12/forge-1.12.2-14.23.5.2860_mapped_snapshot_20171003-1.12.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -165,6 +165,16 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.15.0/9f65403ec51628737d799ebf1a02d56e4cbcd81d/log4j-core-2.15.0-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.15.0/ba55c13d7ac2fd44df9cc8074455719a33f375b9/log4j-core-2.15.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.15.0/b0b2c8ee48c4c57804056fe18494e61bb18404ab/log4j-api-2.15.0-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.15.0/4a5aa7e55a29391c6f66e0b259d5189aa11e45d0/log4j-api-2.15.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/legacydev/0.2.3.1/99cc20b7f67b1dfb00e041d8bb3ac68739100b85/legacydev-0.2.3.1-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/legacydev/0.2.3.1/f2cd4a8c9f09faf1c1e4a9a4c65df36e634f95db/legacydev-0.2.3.1-fatjar.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
@@ -291,16 +301,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.1.0/4a33438326f2fea664656d63d655c349d4131e14/fastutil-7.1.0-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.1.0/9835253257524c1be7ab50c057aa2d418fb72082/fastutil-7.1.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.1/a0a7f683da620c345b502fff04d1e46cde2e8d9/log4j-core-2.8.1-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.8.1/4ac28ff2f1ddf05dae3043a190451e8c46b73c31/log4j-core-2.8.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.1/a5edb6b8c77843c8be98e0cb1f875699e76ee122/log4j-api-2.8.1-sources.jar" kind="lib" path="C:/Users/Emmet/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.8.1/e801d13612e22cad62a3f4f3fe7fdbe6334a8e72/log4j-api-2.8.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

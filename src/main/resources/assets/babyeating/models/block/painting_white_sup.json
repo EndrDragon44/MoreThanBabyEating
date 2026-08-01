@@ -1,8 +1,0 @@
-{
-  "parent": "babyeating:custom/block-model_5x3-painting",
-  "textures": {
-    "all": "babyeating:blocks/deeganholdingsouthflag",
-    "particle": "babyeating:blocks/deeganholdingsouthflag",
-    "3": "babyeating:blocks/paintingdefault"
-  }
-}

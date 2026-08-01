@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "dehydratedhole-dirt"
+      },
+      "name": "default"
+    },
+    "dirt": {
+      "map": {
+        "0": "dehydratedhole-dirt"
+      },
+      "name": "dirt"
+    },
+    "stone": {
+      "map": {
+        "0": "dehydratedhole-default"
+      },
+      "name": "stone"
+    },
+    "redsand": {
+      "map": {
+        "0": "dehydratedhole-redsand"
+      },
+      "name": "redsand"
+    },
+    "sand": {
+      "map": {
+        "0": "dehydratedhole-sand"
+      },
+      "name": "sand"
+    },
+    "sandstone": {
+      "map": {
+        "0": "dehydratedhole-sandstone"
+      },
+      "name": "sandstone"
+    }
+  }
+}

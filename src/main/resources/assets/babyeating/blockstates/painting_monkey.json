@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "babyeating:painting_monkey"
+    },
+    "facing=north": {
+      "model": "babyeating:painting_monkey"
+    },
+    "facing=east": {
+      "model": "babyeating:painting_monkey",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "babyeating:painting_monkey",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "babyeating:painting_monkey",
+      "y": 270
+    }
+  }
+}

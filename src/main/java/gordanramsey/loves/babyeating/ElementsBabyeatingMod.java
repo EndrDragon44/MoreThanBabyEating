@@ -45,6 +45,8 @@ import java.util.ArrayList;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Retention;
 
+import gordanramsey.loves.babyeating.gui.GuiHoleGUI;
+
 public class ElementsBabyeatingMod implements IFuelHandler, IWorldGenerator {
 	public final List<ModElement> elements = new ArrayList<>();
 	public final List<Supplier<Block>> blocks = new ArrayList<>();
@@ -159,11 +161,15 @@ public class ElementsBabyeatingMod implements IFuelHandler, IWorldGenerator {
 	public static class GuiHandler implements IGuiHandler {
 		@Override
 		public Object getServerGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiHoleGUI.GUIID)
+				return new GuiHoleGUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
 		@Override
 		public Object getClientGuiElement(int id, EntityPlayer player, World world, int x, int y, int z) {
+			if (id == GuiHoleGUI.GUIID)
+				return new GuiHoleGUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

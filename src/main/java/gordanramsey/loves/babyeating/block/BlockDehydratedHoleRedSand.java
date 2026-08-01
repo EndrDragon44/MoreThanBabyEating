@@ -12,9 +12,9 @@ import net.minecraft.world.World;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.util.Rotation;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.Mirror;
+import net.minecraft.util.EnumParticleTypes;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumBlockRenderType;
 import net.minecraft.util.BlockRenderLayer;
@@ -28,80 +28,79 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.inventory.InventoryHelper;
 import net.minecraft.inventory.ContainerChest;
 import net.minecraft.inventory.Container;
+import net.minecraft.init.Blocks;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.block.properties.PropertyDirection;
-import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.EnumPushReaction;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.ITileEntityProvider;
-import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.Block;
 
+import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 
+import gordanramsey.loves.babyeating.procedure.ProcedureDehydratedHoleTick;
+import gordanramsey.loves.babyeating.procedure.ProcedureDehydratedHoleInteract;
 import gordanramsey.loves.babyeating.ElementsBabyeatingMod;
 
 @ElementsBabyeatingMod.ModElement.Tag
-public class BlockPaintingWhiteSup extends ElementsBabyeatingMod.ModElement {
-	@GameRegistry.ObjectHolder("babyeating:painting_white_sup")
+public class BlockDehydratedHoleRedSand extends ElementsBabyeatingMod.ModElement {
+	@GameRegistry.ObjectHolder("babyeating:dehydrated_hole_red_sand")
 	public static final Block block = null;
-	public BlockPaintingWhiteSup(ElementsBabyeatingMod instance) {
-		super(instance, 88);
+	public BlockDehydratedHoleRedSand(ElementsBabyeatingMod instance) {
+		super(instance, 113);
 	}
 
 	@Override
 	public void initElements() {
-		elements.blocks.add(() -> new BlockCustom().setRegistryName("painting_white_sup"));
+		elements.blocks.add(() -> new BlockCustom().setRegistryName("dehydrated_hole_red_sand"));
 		elements.items.add(() -> new ItemBlock(block).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		GameRegistry.registerTileEntity(TileEntityCustom.class, "babyeating:tileentitypainting_white_sup");
+		GameRegistry.registerTileEntity(TileEntityCustom.class, "babyeating:tileentitydehydrated_hole_red_sand");
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
 		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
-				new ModelResourceLocation("babyeating:painting_white_sup", "inventory"));
+				new ModelResourceLocation("babyeating:dehydrated_hole_red_sand", "inventory"));
 	}
 	public static class BlockCustom extends Block implements ITileEntityProvider {
-		public static final PropertyDirection FACING = BlockHorizontal.FACING;
 		public BlockCustom() {
-			super(Material.CLOTH);
-			setUnlocalizedName("painting_white_sup");
-			setSoundType(SoundType.WOOD);
-			setHardness(0.05F);
+			super(Material.SAND);
+			setUnlocalizedName("dehydrated_hole_red_sand");
+			setSoundType(SoundType.SAND);
+			setHarvestLevel("pickaxe", 0);
+			setHardness(2F);
 			setResistance(10F);
 			setLightLevel(0F);
 			setLightOpacity(0);
-			setCreativeTab(CreativeTabs.DECORATIONS);
-			this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		}
 
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<String> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(
-					"An amazing type of painting used in the White Supremacist Building in Africa! Keep out of reach and sight of children and conspiracy theorists.");
+			list.add("A hole with a potential item inside!");
 		}
 
 		@SideOnly(Side.CLIENT)
 		@Override
 		public BlockRenderLayer getBlockLayer() {
-			return BlockRenderLayer.CUTOUT;
+			return BlockRenderLayer.CUTOUT_MIPPED;
 		}
 
 		@Override
@@ -121,41 +120,8 @@ public class BlockPaintingWhiteSup extends ElementsBabyeatingMod.ModElement {
 		}
 
 		@Override
-		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-			return new AxisAlignedBB(0, 0, 0, 0, 0, 0);
-		}
-
-		@Override
-		protected net.minecraft.block.state.BlockStateContainer createBlockState() {
-			return new net.minecraft.block.state.BlockStateContainer(this, new IProperty[]{FACING});
-		}
-
-		@Override
-		public IBlockState withRotation(IBlockState state, Rotation rot) {
-			return state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
-		}
-
-		@Override
-		public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {
-			return state.withRotation(mirrorIn.toRotation((EnumFacing) state.getValue(FACING)));
-		}
-
-		@Override
-		public IBlockState getStateFromMeta(int meta) {
-			return this.getDefaultState().withProperty(FACING, EnumFacing.getFront(meta));
-		}
-
-		@Override
-		public int getMetaFromState(IBlockState state) {
-			return ((EnumFacing) state.getValue(FACING)).getIndex();
-		}
-
-		@Override
-		public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta,
-				EntityLivingBase placer) {
-			if (facing == EnumFacing.UP || facing == EnumFacing.DOWN)
-				return this.getDefaultState().withProperty(FACING, EnumFacing.NORTH);
-			return this.getDefaultState().withProperty(FACING, facing);
+		public int tickRate(World world) {
+			return 20;
 		}
 
 		@Override
@@ -169,13 +135,13 @@ public class BlockPaintingWhiteSup extends ElementsBabyeatingMod.ModElement {
 		}
 
 		@Override
-		public MapColor getMapColor(IBlockState state, IBlockAccess blockAccess, BlockPos pos) {
-			return MapColor.AIR;
+		public PathNodeType getAiPathNodeType(IBlockState state, IBlockAccess world, BlockPos pos) {
+			return PathNodeType.BLOCKED;
 		}
 
 		@Override
-		public PathNodeType getAiPathNodeType(IBlockState state, IBlockAccess world, BlockPos pos) {
-			return PathNodeType.BLOCKED;
+		public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
+			drops.add(new ItemStack(Blocks.AIR, (int) (1)));
 		}
 
 		@Override
@@ -196,34 +162,88 @@ public class BlockPaintingWhiteSup extends ElementsBabyeatingMod.ModElement {
 		}
 
 		@Override
-		public void breakBlock(World world, BlockPos pos, IBlockState state) {
-			TileEntity tileentity = world.getTileEntity(pos);
-			if (tileentity instanceof TileEntityCustom)
-				InventoryHelper.dropInventoryItems(world, pos, (TileEntityCustom) tileentity);
-			world.removeTileEntity(pos);
-			super.breakBlock(world, pos, state);
+		public void onBlockAdded(World world, BlockPos pos, IBlockState state) {
+			super.onBlockAdded(world, pos, state);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.scheduleUpdate(new BlockPos(x, y, z), this, this.tickRate(world));
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureDehydratedHoleTick.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
-		public boolean hasComparatorInputOverride(IBlockState state) {
+		public void updateTick(World world, BlockPos pos, IBlockState state, Random random) {
+			super.updateTick(world, pos, state, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureDehydratedHoleTick.executeProcedure($_dependencies);
+			}
+			world.scheduleUpdate(new BlockPos(x, y, z), this, this.tickRate(world));
+		}
+
+		@SideOnly(Side.CLIENT)
+		@Override
+		public void randomDisplayTick(IBlockState state, World world, BlockPos pos, Random random) {
+			super.randomDisplayTick(state, world, pos, random);
+			EntityPlayer entity = Minecraft.getMinecraft().player;
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			int i = x;
+			int j = y;
+			int k = z;
+			if (true)
+				for (int l = 0; l < 1; ++l) {
+					double d0 = (i + random.nextFloat());
+					double d1 = (j + random.nextFloat());
+					double d2 = (k + random.nextFloat());
+					int i1 = random.nextInt(2) * 2 - 1;
+					double d3 = (random.nextFloat() - 0.5D) * 0.5000000014901161D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.5000000014901161D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.5000000014901161D;
+					world.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d0, d1, d2, d3, d4, d5);
+				}
+		}
+
+		@Override
+		public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer entity, EnumHand hand, EnumFacing direction,
+				float hitX, float hitY, float hitZ) {
+			super.onBlockActivated(world, pos, state, entity, hand, direction, hitX, hitY, hitZ);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				ProcedureDehydratedHoleInteract.executeProcedure($_dependencies);
+			}
 			return true;
-		}
-
-		@Override
-		public int getComparatorInputOverride(IBlockState blockState, World worldIn, BlockPos pos) {
-			TileEntity tileentity = worldIn.getTileEntity(pos);
-			if (tileentity instanceof TileEntityCustom)
-				return Container.calcRedstoneFromInventory((TileEntityCustom) tileentity);
-			else
-				return 0;
 		}
 	}
 
 	public static class TileEntityCustom extends TileEntityLockableLoot {
-		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(9, ItemStack.EMPTY);
+		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
 		@Override
 		public int getSizeInventory() {
-			return 9;
+			return 1;
 		}
 
 		@Override
@@ -236,6 +256,8 @@ public class BlockPaintingWhiteSup extends ElementsBabyeatingMod.ModElement {
 
 		@Override
 		public boolean isItemValidForSlot(int index, ItemStack stack) {
+			if (index == 0)
+				return false;
 			return true;
 		}
 
@@ -246,7 +268,7 @@ public class BlockPaintingWhiteSup extends ElementsBabyeatingMod.ModElement {
 
 		@Override
 		public String getName() {
-			return "container.painting_white_sup";
+			return "container.dehydrated_hole_red_sand";
 		}
 
 		@Override
@@ -292,7 +314,7 @@ public class BlockPaintingWhiteSup extends ElementsBabyeatingMod.ModElement {
 
 		@Override
 		public String getGuiID() {
-			return "babyeating:painting_white_sup";
+			return "babyeating:dehydrated_hole_red_sand";
 		}
 
 		@Override

@@ -2,16 +2,16 @@
   "_fv": 18,
   "_type": "plant",
   "definition": {
-    "renderType": 13,
+    "renderType": 120,
     "texture": "spermcroppd-1",
     "textureBottom": "",
-    "customModelName": "Crop model",
+    "customModelName": "Cross model",
     "itemTexture": "spermcropitem",
     "particleTexture": "waterafrica",
     "tintType": "Foliage",
     "isItemTinted": false,
     "plantType": "normal",
-    "staticPlantGenerationType": "Grass",
+    "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Crop",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
@@ -69,6 +69,9 @@
     ],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "restrictionBiomes": [],
+    "onTickUpdate": {
+      "name": "SpermcropUpdateTick"
+    }
   }
 }

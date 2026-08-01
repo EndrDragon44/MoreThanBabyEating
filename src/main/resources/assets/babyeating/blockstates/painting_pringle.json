@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "babyeating:painting_pringle"
+    },
+    "facing=north": {
+      "model": "babyeating:painting_pringle"
+    },
+    "facing=east": {
+      "model": "babyeating:painting_pringle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "babyeating:painting_pringle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "babyeating:painting_pringle",
+      "y": 270
+    }
+  }
+}

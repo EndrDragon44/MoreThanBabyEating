@@ -1,0 +1,73 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -7898778,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 204,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dig more",
+          "onClick": {
+            "name": "HoleGUIPress"
+          },
+          "width": 75,
+          "height": 20,
+          "name": "Dig more",
+          "x": 175,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hey, look! A... hole!",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Hey, look! A... hole!",
+          "x": 166,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Keep digging! (<ENBT:integer:digsNeeded>)",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Keep digging! (<ENBT:integer:digsNeeded>)",
+          "x": 135,
+          "y": 107
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "HoleGUIOpen"
+    }
+  }
+}
