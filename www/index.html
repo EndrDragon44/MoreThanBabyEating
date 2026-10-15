@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More than Baby Eating Mod</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Comic Neue', cursive, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #a1c4fd 100%);
+            background-attachment: fixed;
+            width: calc(100% + 0vw);
+            overflow-x: hidden;
+        }
+        .marker-font {
+            font-family: 'Permanent Marker', cursive;
+        }
+        .vt-font {
+            font-family: 'VT323', monospace;
+        }
+
+        .broken-calc-box {
+            border: calc(4px + 2vw) dashed #ff0055;
+            border-radius: calc(50px - 100px); 
+            padding: calc(2rem - 0.5vw);
+            margin-left: calc(-2vw + 1rem);
+            width: calc(100% + 4vw);
+            transform: rotate(calc(sin(0) * 2deg) skewX(calc(1deg * 2)));
+            box-shadow: calc(10px + 1vw) calc(10px + 1vw) 0px #111;
+            background: rgba(255, 255, 255, 0.92);
+            transition: transform 0.3s ease;
+        }
+        .broken-calc-box:hover {
+            transform: rotate(calc(1deg * 3)) scale(calc(1 - 0.02));
+            box-shadow: calc(15px + 2vw) calc(15px + 2vw) 0px #00ffff;
+        }
+
+        .wobbly-button {
+            border: 4px solid #111;
+            border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+            box-shadow: calc(3px + 0.2vw) calc(3px + 0.2vw) 0px #111;
+            transition: all 0.1s ease;
+        }
+        .wobbly-button:active {
+            transform: translate(3px, 3px);
+            box-shadow: 1px 1px 0px #111;
+        }
+
+        .buggy-heading {
+            font-size: calc(1.5rem + 1.5vw);
+            letter-spacing: calc(2px - 0.5vw);
+        }
+
+        .fucked-grid {
+            display: grid;
+            grid-template-columns: calc(50% + 50px) calc(50% - 50px);
+            gap: calc(2rem - 4vw);
+        }
+        @media (max-width: 768px) {
+            .fucked-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .squiggle-line {
+            height: calc(8px + 0.5vh);
+            background: repeating-linear-gradient(45deg, #111, #111 calc(10px + 2vw), transparent calc(10px + 2vw), transparent calc(20px + 4vw));
+            opacity: 0.85;
+            border-radius: 999px;
+            width: calc(100% - 2vw);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8 max-w-6xl mx-auto text-neutral-900">
+
+    <header class="flex justify-between items-center mb-12">
+        <div class="bg-black text-lime-400 px-6 py-3 transform -rotate-3 border-4 border-lime-400 shadow-[5px_5px_0px_#22c55e]">
+            <span class="marker-font text-3xl tracking-widest"><img src="logo.png"/></span>
+        </div>
+        <div>
+            <a href="https://github.com/EndrDragon44/MoreThanBabyEating/releases" target="_blank" class="wobbly-button bg-lime-400 hover:bg-lime-300 px-6 py-3 font-black text-lg flex items-center gap-2 transform rotate-2 inline-block text-center">
+                <span>Download on Github!</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="space-y-16">
+
+        <section class="broken-calc-box bg-white p-4 sm:p-6">
+            <div class="border-4 border-dashed border-neutral-800 p-4 rounded-2xl bg-sky-100 flex flex-col items-center justify-center min-h-[280px] sm:min-h-[350px] relative overflow-hidden" style="transform: rotate(calc(-0.5deg));">
+                <img src="fullLogo.png" alt="Insert image source here" class="w-full max-w-md h-64 object-cover border-4 border-dashed border-neutral-400 rounded-xl bg-white/50" />
+                <div class="absolute bottom-3 left-4 bg-yellow-300 px-3 py-1 border-2 border-black rounded-lg transform -rotate-2">
+                    <span class="font-bold text-sm"></span>
+                </div>
+            </div>
+            <div class="mt-6 space-y-4">
+                <div class="squiggle-line"></div>
+                <div class="squiggle-line" style="width: calc(90% - 1vw);"></div>
+                <p class="text-center font-bold text-lg text-rose-600 marker-font buggy-heading"></p>
+            </div>
+        </section>
+
+        <section class="fucked-grid items-center">
+            <div class="broken-calc-box bg-fuchsia-200 p-6 flex flex-col items-center justify-center min-h-[240px]">
+                <div class="border-4 border-black bg-white w-full h-48 rounded-xl flex items-center justify-center relative shadow-inner overflow-hidden" style="transform: skewX(calc(-2deg));">
+                    <img src="cheesePringle.png" alt="Insert image source here" class="w-full h-full object-cover" />
+                    <span class="absolute bottom-2 right-3 font-mono text-xs font-bold bg-black text-white px-2 py-1 rounded"></span>
+                </div>
+            </div>
+            <div class="broken-calc-box bg-yellow-100 p-6 space-y-4">
+                <h3 class="marker-font text-purple-700 buggy-heading"></h3>
+                <p class="text-base font-semibold"></p>
+                <div class="bg-white p-3 border-2 border-black rounded-xl font-mono text-sm shadow-[3px_3px_0px_#111]">
+                    <p class="text-rose-600 font-bold"></p>
+                    <p class="text-blue-600 font-bold"></p>
+                    <p class="text-emerald-600 font-bold text-lg"></p>
+                </div>
+                <p class="text-xs italic">THE MOD HAS CUSTOM PAINTINGS YOOOOOOO</p>
+            </div>
+        </section>
+
+        <section class="fucked-grid items-center">
+            <div class="broken-calc-box bg-cyan-100 p-6 space-y-4 order-2 md:order-1">
+                <h3 class="marker-font text-blue-700 buggy-heading"></h3>
+                <p class="font-bold"></p>
+                <div class="bg-white p-3 border-2 border-black rounded-xl font-mono text-sm shadow-[3px_3px_0px_#111]">
+                    <p>This mod is just random and stupid, but has a bit of lore and progression to it. With the Mexican, African, and Chinese dimensions, there's plenty to explore from completely custom villages, to even new bosses.</p>
+                    <p class="text-xs text-neutral-500 mt-1"></p>
+                </div>
+                <p class="text-sm font-semibold"></p>
+            </div>
+            <div class="broken-calc-box bg-lime-200 p-6 flex flex-col items-center justify-center min-h-[240px] order-1 md:order-2">
+                <div class="border-4 border-black bg-white w-full h-48 rounded-xl flex items-center justify-center relative shadow-inner overflow-hidden" style="transform: rotate(calc(2deg));">
+                    <img src="nikFactoryScreenie.png" alt="Insert image source here" class="w-full h-full object-cover" />
+                    <span class="absolute top-2 left-3 font-mono text-xs font-bold bg-black text-white px-2 py-1 rounded"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="broken-calc-box bg-white p-6 space-y-4">
+            <div class="squiggle-line"></div>
+            <div class="squiggle-line" style="width: calc(85% - 2vw);"></div>
+            <div class="squiggle-line"></div>
+            <p class="text-center font-bold text-purple-600 vt-font text-2xl"></p>
+        </section>
+
+    </main>
+
+    <footer class="mt-16 pt-6 border-t-8 border-black text-center space-y-3 pb-8">
+        <p class="marker-font text-xl"></p>
+        <p class="text-sm font-bold text-neutral-700"></p>
+    </footer>
+
+</body>
+</html>
