@@ -9,7 +9,9 @@ Get Forge for 1.12.2 at this official link <a href="https://files.minecraftforge
     <a href="https://github.com/EndrDragon44/BabiesForLunch/releases"><img width="1415" height="549" alt="image" src="https://github.com/user-attachments/assets/b16e6d75-e5f1-4abe-982b-d0511f5085fa"/></a>
 </p>
 
+I am working on a proper pages site and info page and wiki!!!
 
 
 
 <br><br><br><br>Now I know somebody is going to find a few things this mod, so I will state that the contents of this mod do not represent me or the co-creator, and we do not condone the concepts portrayed. We are not responsible for any mimicry of the concepts portrayed nor consequences of them. The offensive concepts in the mod are purely for humor and do not represent us.
+<br>Also, all versions up to version 15 have vague descriptions. This is because these JAR files were built before I kept real track of what did what, and the versions were identified due to how I name my files. For them, due to me not releasing them yet, I simply named version 6 for example 'baby6.jar' and 7.1 'baby7.1.jar', etc. Anyway, these files were found here and there across a few devices and the first build I was documenting is version 15, the first release.
